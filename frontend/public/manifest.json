@@ -1,0 +1,26 @@
+{
+  "short_name": "Avenia",
+  "name": "Avenia - AI Asistan Platformu",
+  "description": "Yapay zeka destekli çok amaçlı asistan platformu",
+  "icons": [
+    {
+      "src": "https://customer-assets.emergentagent.com/job_9c2c30a6-4c42-4be2-b356-1e17020be294/artifacts/hjthkko2_icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://customer-assets.emergentagent.com/job_9c2c30a6-4c42-4be2-b356-1e17020be294/artifacts/hjthkko2_icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#00c896",
+  "background_color": "#232323",
+  "lang": "tr",
+  "scope": "/",
+  "orientation": "portrait-primary"
+}
