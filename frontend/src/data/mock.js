@@ -28,6 +28,7 @@ export const features = [
     title: "Görsel & Video Üretimi",
     description: "Entegre AI servisleri ile sosyal medya için yaratıcı görseller ve videolar oluşturun.",
     gradient: "from-pink-500 to-rose-500"
+    
   },
   {
     id: 5,
