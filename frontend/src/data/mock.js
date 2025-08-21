@@ -121,14 +121,14 @@ export const navLinks = [
 
 export const footerLinks = {
   product: [
-    { label: "Özellikler", href: "#features" },
-    { label: "Fiyatlandırma", href: "#pricing" },
-    { label: "API Dokümantasyonu", href: "/docs" }
+    { label: "Ürün", href: "/product" },
+    { label: "Özellikler", href: "/features" },
+    { label: "Fiyatlandırma", href: "/pricing" }
   ],
   company: [
     { label: "Hakkımızda", href: "/about" },
     { label: "İletişim", href: "/contact" },
-    { label: "Kariyer", href: "/careers" }
+    { label: "Ekip", href: "/team" }
   ],
   legal: [
     { label: "Kullanım Şartları", href: "/terms" },
@@ -137,7 +137,127 @@ export const footerLinks = {
   ],
   support: [
     { label: "Yardım Merkezi", href: "/help" },
-    { label: "İletişim", href: "/contact" },
+    { label: "Destek", href: "/support" },
     { label: "Durum", href: "/status" }
   ]
 };
+
+// Pricing plans data
+export const pricingPlans = [
+  {
+    name: "Ücretsiz",
+    price: "₺0",
+    period: "/ay",
+    description: "Başlangıç için ideal",
+    features: [
+      "Günlük 10 belge özetleme",
+      "5 görsel analizi",
+      "Temel TTS/STT (5 dakika)",
+      "Standart chat desteği",
+      "Topluluk desteği"
+    ],
+    limitations: [
+      "Dosya boyutu max 10MB",
+      "Bekleme sırası var",
+      "Basit AI modelleri"
+    ],
+    buttonText: "Ücretsiz Başla",
+    popular: false
+  },
+  {
+    name: "Premium",
+    price: "₺29",
+    period: "/ay",
+    yearlyPrice: "₺290",
+    yearlyPeriod: "/yıl",
+    description: "Profesyoneller için",
+    features: [
+      "Sınırsız belge özetleme",
+      "Sınırsız görsel analizi", 
+      "Premium TTS/STT (sınırsız)",
+      "Gelişmiş chat + görev kartları",
+      "Firebase güvenli depolama",
+      "Öncelikli işlem",
+      "7/24 canlı destek",
+      "API erişimi"
+    ],
+    limitations: [],
+    buttonText: "Premium'a Geç",
+    popular: true
+  }
+];
+
+// Team members data
+export const teamMembers = [
+  {
+    name: "Ahmet Yılmaz",
+    role: "Kurucu & CEO",
+    bio: "10+ yıl teknoloji deneyimi. Önceki startupı 2020'de başarıyla satıldı.",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+  },
+  {
+    name: "Zeynep Kaya",
+    role: "CTO & Co-Founder",
+    bio: "AI/ML uzmanı. Google ve Microsoft'ta 8 yıl çalıştı.",
+    image: "https://images.unsplash.com/photo-1494790108755-2616b612d495?w=150&h=150&fit=crop&crop=face"
+  },
+  {
+    name: "Mehmet Demir",
+    role: "AI Research Lead",
+    bio: "Boğaziçi Üniversitesi Bilgisayar Mühendisliği. PhD in Machine Learning.",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+  }
+];
+
+// Product screenshots/features
+export const productScreenshots = [
+  {
+    title: "Belge Özetleme",
+    description: "PDF, Word ve PowerPoint dosyalarınızı saniyeler içinde özetleyin",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop"
+  },
+  {
+    title: "Görsel Analizi", 
+    description: "AI vs gerçek fotoğraf/video tespiti ile içerik doğrulama",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop"
+  },
+  {
+    title: "Ses-Metin Dönüşümü",
+    description: "Çok dilli TTS/STT ile ses ve metin arasında kolay dönüşüm",
+    image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?w=600&h=400&fit=crop"
+  }
+];
+
+// Detailed features list
+export const detailedFeatures = [
+  {
+    icon: "FileText",
+    title: "PDF/Word/PowerPoint Özetleme",
+    description: "Uzun belgeleri saniyeler içinde özetleyin, ana noktaları çıkarın"
+  },
+  {
+    icon: "Eye",
+    title: "AI vs Real Analiz (Foto/Video)",
+    description: "Yapay zeka ile üretilen içerikleri gerçeklerden ayırt edin"
+  },
+  {
+    icon: "Globe",
+    title: "Çok Dilli TTS/STT",
+    description: "50+ dilde ses-metin dönüşümü, doğal ses sentezi"
+  },
+  {
+    icon: "MessageSquare",
+    title: "Chat + Görev Kartları",
+    description: "Akıllı sohbet ve organize görev yönetimi"
+  },
+  {
+    icon: "Shield",
+    title: "Firebase Tabanlı Güvenli Depolama",
+    description: "Verileriniz şifreli ve güvenli ortamda saklanır"
+  },
+  {
+    icon: "Zap",
+    title: "Hızlı İşlem",
+    description: "Saniyeler içinde sonuç, optimize edilmiş altyapı"
+  }
+];
