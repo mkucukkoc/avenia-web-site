@@ -153,30 +153,3 @@ cd backend
 # uvicorn server:app --host 0.0.0.0 --port 8001
 ```
 
-## 📊 Analytics
-
-Google Analytics 4 entegrasyonu için:
-1. `.env` dosyasında `REACT_APP_GA_MEASUREMENT_ID` değişkenini ayarlayın
-2. Google Analytics dashboard'undan Measurement ID'nizi alın
-
-## 🤝 Katkıda Bulunma
-
-1. Fork edin
-2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
-3. Commit edin (`git commit -m 'Add amazing feature'`)
-4. Push edin (`git push origin feature/amazing-feature`)
-5. Pull Request açın
-
-## 📄 Lisans
-
-Bu proje MIT lisansı altında lisanslanmıştır.
-
-## 📞 İletişim
-
-- Website: [avenia.com](https://avenia.com)
-- Email: info@avenia.com
-- Destek: help@avenia.com
-
----
-
-**Made with ❤️ for Turkish AI community**
