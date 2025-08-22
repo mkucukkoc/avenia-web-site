@@ -128,8 +128,7 @@ export const footerLinks = {
   ],
   company: [
     { label: "Hakkımızda", href: "/about" },
-    { label: "İletişim", href: "/contact" },
-    { label: "Ekip", href: "/team" }
+    { label: "İletişim", href: "/contact" }
   ],
   legal: [
     { label: "Kullanım Şartları", href: "/terms" },
@@ -191,19 +190,20 @@ export const pricingPlans = [
 // Team members data
 export const teamMembers = [
   {
-    name: "Ahmet Yılmaz",
+    name: "Mustafa Küçükkoç",
     role: "Kurucu & CEO",
-    bio: "10+ yıl teknoloji deneyimi. Önceki startupı 2020'de başarıyla satıldı.",
+    bio: "10+ year technology experience.",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
   },
+  
   {
-    name: "Zeynep Kaya",
-    role: "CTO & Co-Founder",
-    bio: "AI/ML uzmanı. Google ve Microsoft'ta 8 yıl çalıştı.",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612d495?w=150&h=150&fit=crop&crop=face"
+    name: "Mehmet Küçük",
+    role: "AI Research Lead",
+    bio: "Boğaziçi Üniversitesi Bilgisayar Mühendisliği. PhD in Machine Learning.",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
   },
-  {
-    name: "Mehmet Demir",
+   {
+    name: "Ali Veli",
     role: "AI Research Lead",
     bio: "Boğaziçi Üniversitesi Bilgisayar Mühendisliği. PhD in Machine Learning.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"

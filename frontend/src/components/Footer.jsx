@@ -26,12 +26,7 @@ export const Footer = () => {
 
             {/* Social Links */}
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-[#00c896] hover:bg-[#00c896]/20 transition-all duration-200">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-[#00c896] hover:bg-[#00c896]/20 transition-all duration-200">
-                <Github className="w-5 h-5" />
-              </a>
+            
               <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-[#00c896] hover:bg-[#00c896]/20 transition-all duration-200">
                 <Linkedin className="w-5 h-5" />
               </a>

@@ -119,44 +119,7 @@ export default function Features() {
           </Card>
         </div>
 
-        {/* Integration & API */}
-        <Card className="bg-gradient-to-r from-gray-800/40 to-gray-800/60 p-12 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            <span className="text-[#00c896]">API</span> Entegrasyonu
-          </h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Geliştiriciler için RESTful API. Kendi uygulamalarınıza Avenia'nın 
-            AI yeteneklerini entegre edin.
-          </p>
-          
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
-            <div className="text-center">
-              <div className="text-[#00c896] font-bold text-2xl mb-2">REST API</div>
-              <div className="text-gray-400 text-sm">Modern HTTP API</div>
-            </div>
-            <div className="text-center">
-              <div className="text-[#00c896] font-bold text-2xl mb-2">SDK</div>
-              <div className="text-gray-400 text-sm">Python, JS kütüphaneleri</div>
-            </div>
-            <div className="text-center">
-              <div className="text-[#00c896] font-bold text-2xl mb-2">Webhook</div>
-              <div className="text-gray-400 text-sm">Real-time bildirimler</div>
-            </div>
-          </div>
-
-          <div className="bg-gray-900/50 rounded-xl p-6 text-left max-w-md mx-auto">
-            <pre className="text-[#00c896] text-sm">
-{`// Örnek API kullanımı
-const response = await fetch('/api/summarize', {
-  method: 'POST',
-  headers: {
-    'Authorization': 'Bearer YOUR_API_KEY'
-  },
-  body: formData
-});`}
-            </pre>
-          </div>
-        </Card>
+     
       </div>
     </div>
   );
