@@ -12,7 +12,7 @@ export const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <img 
+              <img
                 src="https://customer-assets.emergentagent.com/job_9c2c30a6-4c42-4be2-b356-1e17020be294/artifacts/hjthkko2_icon.png"
                 alt="Avenia"
                 className="w-8 h-8"
@@ -20,10 +20,10 @@ export const Footer = () => {
               <span className="text-2xl font-bold text-white">Avenia</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
-              Yapay zeka destekli çok amaçlı asistan platformu. 
+              Yapay zeka destekli çok amaçlı asistan platformu.
               Belgelerinizi özetleyin, görselleri analiz edin, AI gücünü keşfedin.
             </p>
-            
+
             {/* Social Links */}
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-[#00c896] hover:bg-[#00c896]/20 transition-all duration-200">
@@ -47,9 +47,10 @@ export const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.product.map((link) => (
                 <li key={link.href}>
-                  <a href={link.href} className="text-gray-400 hover:text-[#00c896] transition-colors duration-200">
+                  <Link to={link.href} className="text-gray-400 hover:text-[#00c896] transition-colors duration-200">
                     {link.label}
-                  </a>
+
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -61,9 +62,10 @@ export const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.href}>
-                  <a href={link.href} className="text-gray-400 hover:text-[#00c896] transition-colors duration-200">
+                 <Link to={link.href} className="text-gray-400 hover:text-[#00c896] transition-colors duration-200">
                     {link.label}
-                  </a>
+                 
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -92,9 +94,9 @@ export const Footer = () => {
             </div>
             <div className="flex space-x-6">
               {footerLinks.legal.map((link) => (
-                <Link 
+                <Link
                   key={link.href}
-                  to={link.href} 
+                  to={link.href}
                   className="text-gray-400 hover:text-[#00c896] text-sm transition-colors duration-200"
                 >
                   {link.label}
