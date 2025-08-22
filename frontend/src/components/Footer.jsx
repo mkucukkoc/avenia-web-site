@@ -47,9 +47,9 @@ export const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.product.map((link) => (
                 <li key={link.href}>
-                  <a href={link.href} className="text-gray-400 hover:text-[#00c896] transition-colors duration-200">
+                  <Link to={link.href} className="text-gray-400 hover:text-[#00c896] transition-colors duration-200">
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -61,9 +61,9 @@ export const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.href}>
-                  <a href={link.href} className="text-gray-400 hover:text-[#00c896] transition-colors duration-200">
+                  <Link to={link.href} className="text-gray-400 hover:text-[#00c896] transition-colors duration-200">
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
