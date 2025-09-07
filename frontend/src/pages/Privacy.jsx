@@ -25,131 +25,103 @@ export default function Privacy() {
         {/* Privacy Content */}
         <Card className="bg-gray-800/30 border-gray-700/50 backdrop-blur-sm p-8">
           <div className="prose prose-invert max-w-none">
-            
-            <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              1. Giriş
-            </h2>
-            <p className="text-gray-300 mb-6 leading-relaxed">
-              Avenia olarak, kişisel verilerinizin güvenliği ve gizliliği bizim için son derece 
-              önemlidir. Bu politika, hizmetlerimizi kullanırken verilerinizin nasıl işlendiğini 
-              açıklamaktadır. KVKK ve GDPR uyumlu olarak çalışmaktayız.
-            </p>
+            <pre className="whitespace-pre-wrap text-gray-300">
+{`Avenia Uygulaması – Gizlilik Politikası
+1. Giriş
+Avenia, yapay zekâ destekli sohbet ve üretkenlik hizmetleri sunan bir mobil uygulamadır. Kullanıcılarımızın kişisel verilerinin gizliliği ve güvenliği bizim için önemlidir. Bu Gizlilik Politikası, uygulamamızı kullanırken hangi verileri topladığımızı, nasıl kullandığımızı ve koruduğumuzu açıklar. Uygulamayı kullanarak bu politikada belirtilen şartları kabul etmiş olursunuz.
 
-            <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              2. Toplanan Veriler
-            </h2>
-            <div className="text-gray-300 mb-6 leading-relaxed">
-              <p className="mb-4">Hizmetlerimizi sunarken aşağıdaki veri türlerini topluyoruz:</p>
-              <ul className="list-disc pl-8 space-y-2">
-                <li><strong>Hesap Bilgileri:</strong> E-posta adresi, ad-soyad, şifre</li>
-                <li><strong>Kullanım Verileri:</strong> Platform etkileşimleri, özellik kullanımı</li>
-                <li><strong>Yüklenen İçerik:</strong> Analiz için yüklediğiniz dosyalar ve metinler</li>
-                <li><strong>Teknik Veriler:</strong> IP adresi, tarayıcı bilgileri, cihaz türü</li>
-                <li><strong>Ödeme Bilgileri:</strong> Kredi kartı bilgileri (üçüncü taraf işlemci aracılığıyla)</li>
-              </ul>
-            </div>
+2. Toplanan Veriler
+Veri KategorisiÖrnekler ve Ayrıntılar
+Hesap BilgileriKayıt/oturum açma sırasında ad, e‑posta, parola, Google hesabı kimliği
+Cihaz ve Teknik BilgilerCihaz modeli, işletim sistemi, uygulama sürümü, benzersiz cihaz kimliği
+Kullanım VerileriGörüntülenen ekranlar, tıklanan butonlar, dil tercihleri, hata günlükleri
+İçerik ve DosyalarSohbet mesajları, yüklenen resim/doküman/video dosyaları, yapay zekâya gönderilen veriler
+Abonelik ve Ödeme VerileriSatın alınan paketler, faturalandırma durumu (RevenueCat/RN Purchases aracılığıyla)
+İletişim ve DestekGönderilen hata raporları, destek mesajları, kullanıcı geribildirimleri
+Çerezler ve Benzeri TeknolojilerUygulama performansını ve deneyimini iyileştirmek için kullanılabilir; tarayıcı/cihaz ayarlarından yönetilebilir
+3. Verilerin Kullanım Amaçları
+Hesap oluşturma, kimlik doğrulama ve oturum yönetimi
 
-            <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              3. Veri İşleme Amaçları
-            </h2>
-            <div className="text-gray-300 mb-6 leading-relaxed">
-              <p className="mb-4">Verilerinizi aşağıdaki amaçlarla işliyoruz:</p>
-              <ul className="list-disc pl-8 space-y-2">
-                <li>AI hizmetlerini sunmak ve geliştirmek</li>
-                <li>Hesabınızı yönetmek ve güvenliğini sağlamak</li>
-                <li>Müşteri desteği sağlamak</li>
-                <li>Hizmet kalitesini artırmak ve hatalar düzeltmek</li>
-                <li>Yasal yükümlülükleri yerine getirmek</li>
-              </ul>
-            </div>
+Hizmetin sunulması, geliştirilmesi ve kişiselleştirilmesi
 
-            <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              4. Veri Güvenliği
-            </h2>
-            <div className="text-gray-300 mb-6 leading-relaxed">
-              <p className="mb-4">Verilerinizin güvenliği için aldığımız önlemler:</p>
-              <ul className="list-disc pl-8 space-y-2">
-                <li>256-bit SSL şifreleme ile veri aktarımı</li>
-                <li>Veriler şifreli olarak saklanır</li>
-                <li>Düzenli güvenlik denetimleri</li>
-                <li>Erişim kontrolü ve kimlik doğrulama</li>
-                <li>Veri yedekleme ve kurtarma sistemleri</li>
-              </ul>
-            </div>
+Yapay zekâ modeliyle (OpenAI API) etkileşim ve yanıt üretimi
 
-            <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              5. Veri Saklama
-            </h2>
-            <p className="text-gray-300 mb-6 leading-relaxed">
-              Yüklediğiniz dosyalar işlem tamamlandıktan sonra <strong>24 saat içinde</strong> 
-              silinir. Hesap bilgileriniz hesabınızı kapattığınızda veya yasal saklama süresi 
-              tamamlandığında silinir. Yasal yükümlülükler gereği bazı veriler daha uzun süre 
-              saklanabilir.
-            </p>
+Dosya yükleme, saklama ve paylaşma (Firebase Storage)
 
-            <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              6. Veri Paylaşımı
-            </h2>
-            <div className="text-gray-300 mb-6 leading-relaxed">
-              <p className="mb-4">Verilerinizi yalnızca aşağıdaki durumlarda paylaşırız:</p>
-              <ul className="list-disc pl-8 space-y-2">
-                <li>Yasal zorunluluklar (mahkeme kararı, yasal süreç)</li>
-                <li>Güvenilir hizmet sağlayıcıları (ödeme işlemcisi, cloud servisi)</li>
-                <li>Açık onayınız ile</li>
-              </ul>
-              <p className="mt-4 font-medium text-[#00c896]">
-                Verileriniz hiçbir zaman ticari amaçla üçüncü taraflarla paylaşılmaz.
-              </p>
-            </div>
+Abonelik işlemleri ve ödeme takibi
 
-            <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              7. Haklarınız
-            </h2>
-            <div className="text-gray-300 mb-6 leading-relaxed">
-              <p className="mb-4">KVKK ve GDPR kapsamında aşağıdaki haklarınız bulunmaktadır:</p>
-              <ul className="list-disc pl-8 space-y-2">
-                <li>Verilerinize erişim hakkı</li>
-                <li>Veri düzeltme hakkı</li>
-                <li>Veri silme hakkı ("unutulma hakkı")</li>
-                <li>Veri taşınabilirlik hakkı</li>
-                <li>İşlemeye itiraz etme hakkı</li>
-                <li>Otomatik karar verme süreçlerine itiraz</li>
-              </ul>
-            </div>
+Güvenlik, hata tespiti, kötüye kullanımın önlenmesi
 
-            <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              8. Çerezler
-            </h2>
-            <p className="text-gray-300 mb-6 leading-relaxed">
-              Platformumuzda kullanıcı deneyimini iyileştirmek için çerezler kullanıyoruz. 
-              Çerez tercihlerinizi tarayıcı ayarlarından yönetebilirsiniz. Zorunlu çerezler 
-              platformun çalışması için gereklidir.
-            </p>
+Yasal yükümlülüklerin yerine getirilmesi
 
-            <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              9. Değişiklikler
-            </h2>
-            <p className="text-gray-300 mb-6 leading-relaxed">
-              Bu gizlilik politikası güncellenebilir. Önemli değişiklikler e-posta ile 
-              bildirilir. Politika değişiklikleri bu sayfada yayınlandığı tarihte yürürlüğe girer.
-            </p>
+Kullanıcının talebi üzerine destek sağlanması
 
-            <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              10. İletişim
-            </h2>
-            <p className="text-gray-300 mb-6 leading-relaxed">
-              Gizlilik ile ilgili sorularınız için:
-              <br />
-              📧 E-posta: <a href="mailto:privacy@avenia.com" className="text-[#00c896] hover:underline">privacy@avenia.com</a>
-              <br />
-              📍 Adres: Maslak Mahallesi, Teknoloji Sitesi, İstanbul, Türkiye
-            </p>
+4. Verilerin Paylaşımı
+Kişisel veriler, aşağıdaki durumlar dışında üçüncü taraflarla paylaşılmaz:
 
-            <div className="bg-[#00c896]/10 border border-[#00c896]/30 rounded-xl p-6 mt-8">
-              <p className="text-[#00c896] font-medium">
-                🔒 Gizliliğiniz bizim önceliğimizdir. Sorularınız için her zaman bizimle iletişime geçebilirsiniz.
-              </p>
-            </div>
+Hizmet Sağlayıcılar
+
+Firebase (kimlik doğrulama, veritabanı, dosya saklama)
+
+OpenAI (sistem tarafından gönderilen metin/görsel içerik)
+
+RevenueCat / Google Play / Apple App Store (abonelik yönetimi)
+
+Analiz ve hata izleme servisleri (varsa)
+
+Yasal Gereklilikler
+
+Mahkeme kararı, emniyet makamlarının talebi gibi zorunlu durumlarda
+
+Açık Rıza
+
+Kullanıcının belirli bir paylaşım için açık rıza vermesi halinde
+
+Paylaşım yapılan taraflar, verilerin gizliliğini korumakla yükümlüdür.
+
+5. Verilerin Saklanması ve Silinmesi
+Veriler, hizmetin sunulduğu süre boyunca veya yasal yükümlülükler gerektirdiği ölçüde saklanır.
+
+Kullanıcı hesabı silindiğinde veya yasal süre dolduğunda kişisel veriler silinir, anonim hâle getirilir ya da depolama süresi sona erer.
+
+Yüklenen dosya ve sohbet içerikleri kullanıcı tarafından manuel olarak kaldırılabilir; ayrıca aveniaapp@gmail.com üzerinden talep gönderilerek silme işlemi başlatılabilir.
+
+6. Güvenlik
+Veriler, şifreleme ve erişim kontrolü gibi teknik/organizasyonel tedbirlerle korunur.
+
+Buna rağmen hiçbir sistem %100 güvenlik garantisi veremez; kullanıcılar da hesaplarını korumaktan sorumludur (güçlü parola, cihaz güvenliği vb.).
+
+7. Kullanıcı Hakları
+Kullanıcılar aşağıdaki haklara sahiptir:
+
+Kişisel verilerine erişim talep etme
+
+Yanlış veya eksik veriyi düzeltme
+
+Yasal koşullar çerçevesinde verilerini silme veya işlenmesini kısıtlama
+
+Rıza verdikleri işlemlerden rızalarını geri çekme
+
+Veri taşınabilirliği talep etme (uygulanabildiği ölçüde)
+
+Bu talepler için aveniaapp@gmail.com adresiyle iletişime geçebilirsiniz.
+
+8. Çocukların Gizliliği
+Avenia, 13 yaşın altındaki çocukları hedeflemez ve bilerek veri toplamaz. 13 yaşın altındaki bir çocuktan veri alındığı tespit edilirse hesap kapatılır ve veriler silinir.
+
+9. Uluslararası Veri Aktarımları
+Verileriniz, sunucularımız veya hizmet sağlayıcılarımız aracılığıyla farklı ülkelerde işlenebilir. Bu durumda, ilgili veri koruma yasalarına uygun önlemler alınır (ör. sözleşmesel güvenceler, standart sözleşme maddeleri).
+
+10. Politika Değişiklikleri
+Bu Gizlilik Politikası zaman zaman güncellenebilir. Önemli değişiklikler uygulama içinde bildirilir veya kayıtlı e‑posta adresinize gönderilir. Değişiklikleri takip etmek kullanıcıların sorumluluğundadır.
+
+11. İletişim
+Gizlilik Politikası ile ilgili sorularınız, talepleriniz veya şikâyetleriniz için:
+
+E‑posta: aveniaapp@gmail.com
+
+Avenia’yı tercih ettiğiniz için teşekkür ederiz. Uygulamayı kullanmaya devam ederek bu Gizlilik Politikasını kabul etmiş sayılırsınız.`}
+            </pre>
           </div>
         </Card>
       </div>
