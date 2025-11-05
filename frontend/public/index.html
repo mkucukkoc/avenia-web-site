@@ -68,6 +68,19 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   </head>
   <body>
+    <script>
+      (function () {
+        try {
+          var redirectPath = window.sessionStorage.getItem('redirectPath');
+          if (redirectPath) {
+            window.sessionStorage.removeItem('redirectPath');
+            window.history.replaceState(null, '', redirectPath);
+          }
+        } catch (e) {
+          console.warn('SPA redirect restoration failed:', e);
+        }
+      })();
+    </script>
     <noscript>Bu uygulamayı çalıştırmak için JavaScript'i etkinleştirmeniz gerekiyor.</noscript>
     <div id="root"></div>
     

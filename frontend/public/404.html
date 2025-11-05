@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Yönlendiriliyor...</title>
+    <meta name="robots" content="noindex" />
+    <script>
+      (function () {
+        var redirectTarget = window.location.pathname + window.location.search + window.location.hash;
+        try {
+          window.sessionStorage.setItem('redirectPath', redirectTarget);
+        } catch (e) {
+          console.warn('SPA redirect storage failed:', e);
+        }
+        window.location.replace('/');
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <meta http-equiv="refresh" content="0; url=/" />
+    </noscript>
+    <p>Yönlendiriliyor...</p>
+  </body>
+</html>
+
