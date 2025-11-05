@@ -111,6 +111,18 @@ export const faqData = [
   {
     question: "Teknik destek nasıl alırım?",
     answer: "Premium üyelerimize 7/24 canlı destek, ücretsiz kullanıcılarımıza e-posta desteği sunuyoruz. Ayrıca detaylı dokümantasyon ve video eğitimlerimiz mevcuttur."
+  },
+  {
+    question: "Hesap bilgilerini nasıl silebilirim?",
+    answer: `Avenia uygulamasını açın ve Settings → Delete Account yolunu izleyin (veya web formunu kullanın).
+
+"Delete Account" butonuna bastığınızda talebiniz alınır ve 30 gün içinde tamamen silinir.
+
+- Hesap bilgileri (ad, e-posta) hemen silinir.
+- Sohbet/analiz geçmişi ve abonelik kayıtları 30 gün içinde kalıcı olarak kaldırılır; yasal zorunluluk yoksa başka saklama yapılmaz.
+- Uygulama içi satın alma kayıtları yalnızca Google Play faturalandırma sisteminde kalır.
+
+Her türlü soru için support@aveniaichat.com adresinden bizimle iletişime geçebilirsiniz.`
   }
 ];
 
