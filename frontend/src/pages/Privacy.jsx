@@ -136,7 +136,7 @@ export default function Privacy() {
             <p className="text-gray-300 mb-6 leading-relaxed">
               For any privacy-related questions:
               <br />
-              📧 Email: <a href="mailto:privacy@avenia.com" className="text-[#00c896] hover:underline">privacy@avenia.com</a>
+              📧 Email: <a href="mailto:support@aveniaichat.com" className="text-[#00c896] hover:underline">support@aveniaichat.com</a>
               <br />
               📍 Address: Maslak District, Teknoloji Campus, Istanbul, Turkey
             </p>

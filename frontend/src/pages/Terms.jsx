@@ -106,8 +106,8 @@ export default function Terms() {
             </h2>
             <p className="text-gray-300 mb-6 leading-relaxed">
               If you have questions about these terms, contact us at
-              <a href="mailto:legal@avenia.com" className="text-[#00c896] hover:underline ml-1">
-                legal@avenia.com
+              <a href="mailto:support@aveniaichat.com" className="text-[#00c896] hover:underline ml-1">
+                support@aveniaichat.com
               </a>.
             </p>
 
