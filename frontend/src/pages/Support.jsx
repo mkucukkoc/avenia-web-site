@@ -82,9 +82,15 @@ export default function Support() {
                 <p className="text-[#00c896] text-sm font-medium mb-6">{channel.available}</p>
                 
                 <Button 
+                  asChild
                   className="w-full bg-[#00c896] hover:bg-[#00b085] text-white py-2 rounded-xl font-semibold transition-all duration-200"
                 >
-                  {channel.action}
+                  <a
+                    href="mailto:support@aveniaichat.com"
+                    className="flex items-center justify-center"
+                  >
+                    {channel.action}
+                  </a>
                 </Button>
               </Card>
             );
@@ -173,11 +179,17 @@ export default function Support() {
             </Button>
             
             <Button 
+              asChild
               variant="outline"
               className="border-gray-600 text-white hover:bg-gray-700 px-8 py-3 rounded-xl font-semibold transition-all duration-200"
             >
-              <Mail className="w-5 h-5 mr-2" />
-              Send Email
+              <a
+                href="mailto:support@aveniaichat.com"
+                className="flex items-center"
+              >
+                <Mail className="w-5 h-5 mr-2" />
+                Send Email
+              </a>
             </Button>
           </div>
           

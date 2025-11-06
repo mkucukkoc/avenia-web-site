@@ -273,31 +273,6 @@ export default function Status() {
             ))}
           </div>
         </div>
-
-        {/* Subscribe to Updates */}
-        <Card className="bg-gradient-to-r from-gray-800/40 to-gray-800/60 p-12 text-center mt-16">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Status <span className="text-[#00c896]">Updates</span>
-          </h2>
-          <p className="text-xl text-gray-300 mb-8">
-            Subscribe to stay informed about changes to system availability.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="Your email address"
-              className="flex-1 px-4 py-3 bg-gray-700 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-[#00c896]"
-            />
-            <button className="bg-[#00c896] hover:bg-[#00b085] text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 hover:shadow-lg hover:shadow-[#00c896]/25">
-              Subscribe
-            </button>
-          </div>
-          
-          <p className="text-gray-400 text-sm mt-4">
-            We only send critical updates—never spam.
-          </p>
-        </Card>
       </div>
     </div>
   );

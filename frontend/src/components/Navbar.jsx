@@ -37,9 +37,17 @@ export const Navbar = () => {
               </Link>
             ))}
             <Button 
+              asChild
               className="bg-[#00c896] hover:bg-[#00b085] text-white px-6 py-2 rounded-xl font-semibold transition-all duration-200 hover:shadow-lg hover:shadow-[#00c896]/25"
             >
-              Try for Free
+              <a
+                href="https://play.google.com/store/apps/details?id=com.aveniaichat"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center"
+              >
+                Try for Free
+              </a>
             </Button>
           </div>
 
@@ -67,10 +75,18 @@ export const Navbar = () => {
                 </Link>
               ))}
               <Button 
+                asChild
                 className="w-full bg-[#00c896] hover:bg-[#00b085] text-white py-3 rounded-xl font-semibold mt-4"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Try for Free
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.aveniaichat"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center"
+                >
+                  Try for Free
+                </a>
               </Button>
             </div>
           </div>

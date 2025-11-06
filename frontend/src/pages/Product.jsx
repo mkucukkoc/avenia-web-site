@@ -29,11 +29,19 @@ export default function Product() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <Button 
+              asChild
               size="lg"
               className="bg-[#00c896] hover:bg-[#00b085] text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 hover:shadow-xl hover:shadow-[#00c896]/25 hover:scale-105 group"
             >
-              Try for Free
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <a
+                href="https://play.google.com/store/apps/details?id=com.aveniaichat"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center"
+              >
+                Try for Free
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
             
             <Button 
@@ -122,10 +130,18 @@ export default function Product() {
             Create your free account and explore the power of AI.
           </p>
           <Button 
+            asChild
             size="lg"
             className="bg-[#00c896] hover:bg-[#00b085] text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-200 hover:shadow-2xl hover:shadow-[#00c896]/30 hover:scale-105"
           >
-            Create a Free Account
+            <a
+              href="https://play.google.com/store/apps/details?id=com.aveniaichat"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center"
+            >
+              Create a Free Account
+            </a>
           </Button>
         </div>
       </div>
