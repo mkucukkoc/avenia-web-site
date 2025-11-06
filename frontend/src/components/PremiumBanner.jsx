@@ -58,7 +58,7 @@ export const PremiumBanner = () => {
               size="lg"
               className="bg-gradient-to-r from-purple-500 to-[#00c896] hover:from-purple-600 hover:to-[#00b085] text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 hover:shadow-xl hover:shadow-purple-500/25 hover:scale-105"
             >
-              Upgrade to Premium – $29/mo
+              Upgrade to Premium – $7/mo
             </Button>
 
             <p className="text-gray-400 text-sm mt-4">

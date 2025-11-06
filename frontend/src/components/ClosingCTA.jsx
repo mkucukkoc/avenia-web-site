@@ -35,11 +35,19 @@ export const ClosingCTA = () => {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
           <Button 
+            asChild
             size="lg"
             className="bg-[#00c896] hover:bg-[#00b085] text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-200 hover:shadow-2xl hover:shadow-[#00c896]/30 hover:scale-105 group"
           >
-            Get Started Free
-            <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" />
+            <a
+              href="https://play.google.com/store/apps/details?id=com.aveniaichat"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center"
+            >
+              Get Started Free
+              <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" />
+            </a>
           </Button>
         </div>
 
