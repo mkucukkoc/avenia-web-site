@@ -39,7 +39,7 @@ export const Navbar = () => {
             <Button 
               className="bg-[#00c896] hover:bg-[#00b085] text-white px-6 py-2 rounded-xl font-semibold transition-all duration-200 hover:shadow-lg hover:shadow-[#00c896]/25"
             >
-              Ücretsiz Dene
+              Try for Free
             </Button>
           </div>
 
@@ -70,7 +70,7 @@ export const Navbar = () => {
                 className="w-full bg-[#00c896] hover:bg-[#00b085] text-white py-3 rounded-xl font-semibold mt-4"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Ücretsiz Dene
+                Try for Free
               </Button>
             </div>
           </div>

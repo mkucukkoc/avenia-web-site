@@ -14,20 +14,20 @@ export default function Pricing() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-[#00c896]/20 border border-[#00c896]/30 mb-8">
-            <span className="text-[#00c896] text-sm font-medium">💰 Fiyatlandırma</span>
+            <span className="text-[#00c896] text-sm font-medium">💰 Pricing</span>
           </div>
           
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Size Uygun <span className="text-[#00c896]">Planı</span> Seçin
+            Choose the <span className="text-[#00c896]">Plan</span> That Fits You
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-            İhtiyaçlarınıza göre tasarlanmış esnek fiyatlandırma seçenekleri
+            Flexible pricing that adapts to your needs
           </p>
 
           {/* Toggle */}
           <div className="flex items-center justify-center gap-4 mb-12">
             <span className={`text-lg font-medium transition-colors ${!isYearly ? 'text-white' : 'text-gray-400'}`}>
-              Aylık
+              Monthly
             </span>
             <button
               onClick={() => setIsYearly(!isYearly)}
@@ -42,11 +42,11 @@ export default function Pricing() {
               />
             </button>
             <span className={`text-lg font-medium transition-colors ${isYearly ? 'text-white' : 'text-gray-400'}`}>
-              Yıllık
+              Yearly
             </span>
             {isYearly && (
               <Badge className="bg-[#00c896]/20 text-[#00c896] border-[#00c896]/30">
-                2 Ay Ücretsiz
+                2 Months Free
               </Badge>
             )}
           </div>
@@ -66,7 +66,7 @@ export default function Pricing() {
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <Badge className="bg-[#00c896] text-white px-4 py-1">
-                    En Popüler
+                    Most Popular
                   </Badge>
                 </div>
               )}
@@ -97,7 +97,7 @@ export default function Pricing() {
 
               {/* Features */}
               <div className="space-y-4 mb-6">
-                <h4 className="text-white font-semibold mb-3">Dahil olan özellikler:</h4>
+                <h4 className="text-white font-semibold mb-3">Included features:</h4>
                 {plan.features.map((feature, featureIndex) => (
                   <div key={featureIndex} className="flex items-start">
                     <Check className="w-5 h-5 text-[#00c896] mr-3 mt-0.5 flex-shrink-0" />
@@ -109,7 +109,7 @@ export default function Pricing() {
               {/* Limitations */}
               {plan.limitations.length > 0 && (
                 <div className="space-y-4 pt-4 border-t border-gray-700">
-                  <h4 className="text-gray-400 font-semibold mb-3">Sınırlamalar:</h4>
+                  <h4 className="text-gray-400 font-semibold mb-3">Limitations:</h4>
                   {plan.limitations.map((limitation, limitIndex) => (
                     <div key={limitIndex} className="flex items-start">
                       <X className="w-5 h-5 text-gray-500 mr-3 mt-0.5 flex-shrink-0" />
@@ -125,7 +125,7 @@ export default function Pricing() {
         {/* Feature Comparison Table */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-white text-center mb-12">
-            Özellik <span className="text-[#00c896]">Karşılaştırması</span>
+            Feature <span className="text-[#00c896]">Comparison</span>
           </h2>
           
           <Card className="bg-gray-800/30 border-gray-700/50 overflow-hidden">
@@ -133,43 +133,43 @@ export default function Pricing() {
               <table className="w-full">
                 <thead>
                   <tr className="border-b border-gray-700">
-                    <th className="text-left p-6 text-white font-semibold">Özellik</th>
-                    <th className="text-center p-6 text-white font-semibold">Ücretsiz</th>
+                    <th className="text-left p-6 text-white font-semibold">Feature</th>
+                    <th className="text-center p-6 text-white font-semibold">Free</th>
                     <th className="text-center p-6 text-white font-semibold">Premium</th>
                   </tr>
                 </thead>
                 <tbody className="text-gray-300">
                   <tr className="border-b border-gray-700/50">
-                    <td className="p-6">Belge özetleme</td>
-                    <td className="text-center p-6">10/gün</td>
+                    <td className="p-6">Document summarization</td>
+                    <td className="text-center p-6">10/day</td>
                     <td className="text-center p-6">
                       <Check className="w-5 h-5 text-[#00c896] mx-auto" />
-                      <span className="text-xs text-gray-400 block">Sınırsız</span>
+                      <span className="text-xs text-gray-400 block">Unlimited</span>
                     </td>
                   </tr>
                   <tr className="border-b border-gray-700/50">
-                    <td className="p-6">Görsel analizi</td>
-                    <td className="text-center p-6">5/gün</td>
+                    <td className="p-6">Image analysis</td>
+                    <td className="text-center p-6">5/day</td>
                     <td className="text-center p-6">
                       <Check className="w-5 h-5 text-[#00c896] mx-auto" />
-                      <span className="text-xs text-gray-400 block">Sınırsız</span>
+                      <span className="text-xs text-gray-400 block">Unlimited</span>
                     </td>
                   </tr>
                   <tr className="border-b border-gray-700/50">
                     <td className="p-6">TTS/STT</td>
-                    <td className="text-center p-6">5 dk/gün</td>
+                    <td className="text-center p-6">5 min/day</td>
                     <td className="text-center p-6">
                       <Check className="w-5 h-5 text-[#00c896] mx-auto" />
-                      <span className="text-xs text-gray-400 block">Sınırsız</span>
+                      <span className="text-xs text-gray-400 block">Unlimited</span>
                     </td>
                   </tr>
                   <tr className="border-b border-gray-700/50">
-                    <td className="p-6">Dosya boyutu</td>
+                    <td className="p-6">File size</td>
                     <td className="text-center p-6">10MB</td>
                     <td className="text-center p-6">100MB</td>
                   </tr>
                   <tr className="border-b border-gray-700/50">
-                    <td className="p-6">Öncelikli işlem</td>
+                    <td className="p-6">Priority processing</td>
                     <td className="text-center p-6">
                       <X className="w-5 h-5 text-gray-500 mx-auto" />
                     </td>
@@ -178,7 +178,7 @@ export default function Pricing() {
                     </td>
                   </tr>
                   <tr className="border-b border-gray-700/50">
-                    <td className="p-6">API erişimi</td>
+                    <td className="p-6">API access</td>
                     <td className="text-center p-6">
                       <X className="w-5 h-5 text-gray-500 mx-auto" />
                     </td>
@@ -187,9 +187,9 @@ export default function Pricing() {
                     </td>
                   </tr>
                   <tr>
-                    <td className="p-6">Destek</td>
-                    <td className="text-center p-6">Topluluk</td>
-                    <td className="text-center p-6">Canlı destek 7/24</td>
+                    <td className="p-6">Support</td>
+                    <td className="text-center p-6">Community</td>
+                    <td className="text-center p-6">24/7 live support</td>
                   </tr>
                 </tbody>
               </table>
@@ -200,28 +200,28 @@ export default function Pricing() {
         {/* FAQ */}
         <div className="text-center">
           <h2 className="text-3xl font-bold text-white mb-8">
-            Sık Sorulan <span className="text-[#00c896]">Sorular</span>
+            Frequently Asked <span className="text-[#00c896]">Questions</span>
           </h2>
           
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             <Card className="bg-gray-800/30 border-gray-700/50 p-6 text-left">
-              <h3 className="text-white font-semibold mb-3">Ücretsiz sürümde ne kadar kullanım hakkım var?</h3>
-              <p className="text-gray-300">Günlük 10 belge özetleme, 5 görsel analizi ve 5 dakika TTS/STT hakkınız bulunur.</p>
+              <h3 className="text-white font-semibold mb-3">How much can I use on the free plan?</h3>
+              <p className="text-gray-300">You get 10 document summaries, 5 image analyses, and 5 minutes of TTS/STT per day.</p>
             </Card>
             
             <Card className="bg-gray-800/30 border-gray-700/50 p-6 text-left">
-              <h3 className="text-white font-semibold mb-3">Premium aboneliği iptal edebilir miyim?</h3>
-              <p className="text-gray-300">Evet, istediğiniz zaman iptal edebilirsiniz. İptal sonrası mevcut dönem sonuna kadar kullanabilirsiniz.</p>
+              <h3 className="text-white font-semibold mb-3">Can I cancel the Premium subscription?</h3>
+              <p className="text-gray-300">Yes. Cancel anytime and keep access until the end of your current billing period.</p>
             </Card>
             
             <Card className="bg-gray-800/30 border-gray-700/50 p-6 text-left">
-              <h3 className="text-white font-semibold mb-3">Yıllık planda ne kadar tasarruf ederim?</h3>
-              <p className="text-gray-300">Yıllık ödeme ile %17 tasarruf edersiniz (2 ay ücretsiz).</p>
+              <h3 className="text-white font-semibold mb-3">How much do I save on the yearly plan?</h3>
+              <p className="text-gray-300">Paying yearly saves you 17%—effectively two months for free.</p>
             </Card>
             
             <Card className="bg-gray-800/30 border-gray-700/50 p-6 text-left">
-              <h3 className="text-white font-semibold mb-3">Veri güvenliği nasıl sağlanıyor?</h3>
-              <p className="text-gray-300">Firebase güvenli depolama ve 256-bit SSL şifreleme ile verileriniz korunur.</p>
+              <h3 className="text-white font-semibold mb-3">How is my data kept secure?</h3>
+              <p className="text-gray-300">We protect your data with secure Firebase storage and 256-bit SSL encryption.</p>
             </Card>
           </div>
         </div>

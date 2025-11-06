@@ -16,7 +16,7 @@ export const TrustBadges = () => {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-            Neden <span className="text-[#00c896]">Avenia?</span>
+            Why <span className="text-[#00c896]">Avenia?</span>
           </h2>
         </div>
 
@@ -45,16 +45,16 @@ export const TrustBadges = () => {
         <div className="flex flex-wrap justify-center items-center gap-8 mt-16 pt-8 border-t border-gray-700/50">
           <div className="flex items-center space-x-2 text-gray-400">
             <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-            <span className="text-sm">Sistem Aktif</span>
+            <span className="text-sm">System Online</span>
           </div>
           <div className="text-gray-400 text-sm">
-            SOC 2 Uyumlu
+            SOC 2 Compliant
           </div>
           <div className="text-gray-400 text-sm">
-            GDPR Uyumlu
+            GDPR Compliant
           </div>
           <div className="text-gray-400 text-sm">
-            256-bit SSL Şifreleme
+            256-bit SSL Encryption
           </div>
         </div>
       </div>

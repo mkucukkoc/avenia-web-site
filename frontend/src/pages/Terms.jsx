@@ -12,13 +12,13 @@ export default function Terms() {
             <FileText className="w-8 h-8 text-[#00c896]" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Kullanım <span className="text-[#00c896]">Şartları</span>
+            Terms of <span className="text-[#00c896]">Use</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Avenia hizmetlerini kullanırken geçerli olan şartlar ve koşullar
+            The terms and conditions governing your use of Avenia services.
           </p>
           <p className="text-gray-400 mt-4">
-            Son güncelleme: 15 Aralık 2024
+            Last updated: December 15, 2024
           </p>
         </div>
 
@@ -27,99 +27,93 @@ export default function Terms() {
           <div className="prose prose-invert max-w-none">
             
             <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              1. Hizmet Kapsamı
+              1. Scope of Service
             </h2>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Avenia, yapay zeka destekli belge özetleme, görsel analizi, ses-metin dönüşümü ve 
-              diğer AI hizmetlerini sunan bir platformdur. Bu hizmetleri kullanarak aşağıdaki 
-              şartları kabul etmiş sayılırsınız.
+              Avenia is an AI-powered platform that provides document summarization, visual analysis, speech-to-text and text-to-speech, and additional AI-driven capabilities.
+              By using these services you agree to the terms outlined in this document.
             </p>
 
             <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              2. Kullanıcı Sorumlulukları
+              2. User Responsibilities
             </h2>
             <div className="text-gray-300 mb-6 leading-relaxed">
-              <p className="mb-4">Kullanıcı olarak aşağıdaki sorumluluklara sahipsiniz:</p>
+              <p className="mb-4">As a user you agree to:</p>
               <ul className="list-disc pl-8 space-y-2">
-                <li>Platformu yasal amaçlar için kullanmak</li>
-                <li>Telif hakkı ihlali içeren içerikler yüklememek</li>
-                <li>Zararlı yazılım veya spam içeriği paylaşmamak</li>
-                <li>Diğer kullanıcıların haklarını ihlal etmemek</li>
-                <li>Hesap bilgilerinizin güvenliğini sağlamak</li>
+                <li>Use the platform only for lawful purposes.</li>
+                <li>Avoid uploading content that infringes intellectual property rights.</li>
+                <li>Refrain from distributing malware, spam, or harmful content.</li>
+                <li>Respect the rights of other users.</li>
+                <li>Keep your account credentials secure.</li>
               </ul>
             </div>
 
             <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              3. Veri İşleme ve Gizlilik
+              3. Data Processing & Privacy
             </h2>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Yüklediğiniz dosyalar yalnızca size hizmet sunmak amacıyla işlenir. Verileriniz 
-              işlem tamamlandıktan sonra silinir ve üçüncü taraflarla paylaşılmaz. Detaylı 
-              bilgi için <a href="/privacy" className="text-[#00c896] hover:underline">Gizlilik Politikamızı</a> inceleyin.
+              Uploaded files are processed solely to deliver the requested service. Data is deleted after processing and never shared with third parties.
+              For detailed information please review our <a href="/privacy" className="text-[#00c896] hover:underline">Privacy Policy</a>.
             </p>
 
             <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              4. Hizmet Sınırlamaları
+              4. Service Limitations
             </h2>
             <div className="text-gray-300 mb-6 leading-relaxed">
-              <p className="mb-4">Hizmetlerimizde aşağıdaki sınırlamalar bulunmaktadır:</p>
+              <p className="mb-4">Our services include the following limitations:</p>
               <ul className="list-disc pl-8 space-y-2">
-                <li>Ücretsiz hesaplarda günlük kullanım limitleri</li>
-                <li>Dosya boyutu sınırlamaları (maksimum 100MB)</li>
-                <li>Eş zamanlı işlem sayısı limitleri</li>
-                <li>Belirli dosya formatları ile sınırlılık</li>
+                <li>Daily usage limits for free accounts.</li>
+                <li>File size restrictions (up to 100 MB).</li>
+                <li>Concurrent processing limits.</li>
+                <li>Support for specific file formats only.</li>
               </ul>
             </div>
 
             <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              5. Ödeme ve İptal
+              5. Billing & Cancellation
             </h2>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Premium abonelik ücretleri aylık olarak tahsil edilir. Aboneliğinizi istediğiniz 
-              zaman iptal edebilirsiniz. İptal durumunda, mevcut dönem sonuna kadar hizmetlerden 
-              yararlanmaya devam edersiniz. İade talepleri ilk 7 gün içinde değerlendirilir.
+              Premium subscriptions are billed monthly. You may cancel at any time and retain access until the end of the current billing period.
+              Refund requests are evaluated within the first 7 days of purchase.
             </p>
 
             <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              6. Fikri Mülkiyet
+              6. Intellectual Property
             </h2>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Avenia platformu ve tüm içerikleri fikri mülkiyet haklarıyla korunmaktadır. 
-              Kullanıcılar, yüklediği içeriklerin telif haklarına sahip olduğunu veya 
-              kullanım iznine sahip olduğunu beyan eder.
+              Avenia, its platform, and associated content are protected by intellectual property laws.
+              Users represent that they own or have permission to use any content they upload.
             </p>
 
             <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              7. Hizmet Kesintileri
+              7. Service Interruptions
             </h2>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Teknik bakım, güncelleme veya beklenmeyen durumlar nedeniyle hizmetlerimizde 
-              geçici kesintiler yaşanabilir. Bu durumlardan kaynaklanan zararlardan 
-              sorumlu değiliz.
+              Temporary outages may occur due to maintenance, upgrades, or unforeseen circumstances.
+              Avenia is not liable for losses arising from such interruptions.
             </p>
 
             <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              8. Değişiklikler
+              8. Changes
             </h2>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Bu kullanım şartları zaman zaman güncellenebilir. Önemli değişiklikler e-posta 
-              yoluyla bildirilir. Değişikliklerden sonra hizmeti kullanmaya devam etmeniz 
-              yeni şartları kabul ettiğiniz anlamına gelir.
+              These terms may be updated periodically. We will notify you via email of any material changes.
+              Continued use of the service after changes take effect constitutes acceptance of the revised terms.
             </p>
 
             <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              9. İletişim
+              9. Contact
             </h2>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Bu kullanım şartları hakkında sorularınız için 
+              If you have questions about these terms, contact us at
               <a href="mailto:legal@avenia.com" className="text-[#00c896] hover:underline ml-1">
                 legal@avenia.com
-              </a> adresinden bizimle iletişime geçebilirsiniz.
+              </a>.
             </p>
 
             <div className="bg-[#00c896]/10 border border-[#00c896]/30 rounded-xl p-6 mt-8">
               <p className="text-[#00c896] font-medium">
-                📄 Bu şartları kabul ederek Avenia'nın güvenli ve adil kullanımına katkıda bulunuyorsunuz.
+                📄 By accepting these terms you help keep Avenia safe and fair for everyone.
               </p>
             </div>
           </div>

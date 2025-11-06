@@ -12,13 +12,13 @@ export default function Privacy() {
             <Shield className="w-8 h-8 text-[#00c896]" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Gizlilik <span className="text-[#00c896]">Politikası</span>
+            Privacy <span className="text-[#00c896]">Policy</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Kişisel verilerinizin nasıl toplandığı, işlendiği ve korunduğu hakkında detaylı bilgiler
+            Detailed information on how we collect, process, and protect your personal data.
           </p>
           <p className="text-gray-400 mt-4">
-            Son güncelleme: 15 Aralık 2024
+            Last updated: December 15, 2024
           </p>
         </div>
 
@@ -27,127 +27,123 @@ export default function Privacy() {
           <div className="prose prose-invert max-w-none">
             
             <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              1. Giriş
+              1. Introduction
             </h2>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Avenia olarak, kişisel verilerinizin güvenliği ve gizliliği bizim için son derece 
-              önemlidir. Bu politika, hizmetlerimizi kullanırken verilerinizin nasıl işlendiğini 
-              açıklamaktadır. KVKK ve GDPR uyumlu olarak çalışmaktayız.
+              At Avenia we take the security and privacy of your personal data seriously. This policy explains how we process your information while delivering our services.
+              We operate in compliance with GDPR and KVKK regulations.
             </p>
 
             <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              2. Toplanan Veriler
+              2. Data We Collect
             </h2>
             <div className="text-gray-300 mb-6 leading-relaxed">
-              <p className="mb-4">Hizmetlerimizi sunarken aşağıdaki veri türlerini topluyoruz:</p>
+              <p className="mb-4">We collect the following categories of data to provide the service:</p>
               <ul className="list-disc pl-8 space-y-2">
-                <li><strong>Hesap Bilgileri:</strong> E-posta adresi, ad-soyad, şifre</li>
-                <li><strong>Kullanım Verileri:</strong> Platform etkileşimleri, özellik kullanımı</li>
-                <li><strong>Yüklenen İçerik:</strong> Analiz için yüklediğiniz dosyalar ve metinler</li>
-                <li><strong>Teknik Veriler:</strong> IP adresi, tarayıcı bilgileri, cihaz türü</li>
-                <li><strong>Ödeme Bilgileri:</strong> Kredi kartı bilgileri (üçüncü taraf işlemci aracılığıyla)</li>
+                <li><strong>Account Information:</strong> Email address, name, and password.</li>
+                <li><strong>Usage Data:</strong> Interaction logs and feature usage metrics.</li>
+                <li><strong>Uploaded Content:</strong> Files and text submitted for analysis.</li>
+                <li><strong>Technical Data:</strong> IP address, browser details, and device type.</li>
+                <li><strong>Payment Information:</strong> Processed securely via third-party billing providers.</li>
               </ul>
             </div>
 
             <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              3. Veri İşleme Amaçları
+              3. How We Use Data
             </h2>
             <div className="text-gray-300 mb-6 leading-relaxed">
-              <p className="mb-4">Verilerinizi aşağıdaki amaçlarla işliyoruz:</p>
+              <p className="mb-4">We process your data for the following purposes:</p>
               <ul className="list-disc pl-8 space-y-2">
-                <li>AI hizmetlerini sunmak ve geliştirmek</li>
-                <li>Hesabınızı yönetmek ve güvenliğini sağlamak</li>
-                <li>Müşteri desteği sağlamak</li>
-                <li>Hizmet kalitesini artırmak ve hatalar düzeltmek</li>
-                <li>Yasal yükümlülükleri yerine getirmek</li>
+                <li>Delivering and improving AI services.</li>
+                <li>Managing and securing your account.</li>
+                <li>Providing customer support.</li>
+                <li>Improving quality and resolving issues.</li>
+                <li>Complying with legal obligations.</li>
               </ul>
             </div>
 
             <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              4. Veri Güvenliği
+              4. Data Security
             </h2>
             <div className="text-gray-300 mb-6 leading-relaxed">
-              <p className="mb-4">Verilerinizin güvenliği için aldığımız önlemler:</p>
+              <p className="mb-4">We protect your data using:</p>
               <ul className="list-disc pl-8 space-y-2">
-                <li>256-bit SSL şifreleme ile veri aktarımı</li>
-                <li>Veriler şifreli olarak saklanır</li>
-                <li>Düzenli güvenlik denetimleri</li>
-                <li>Erişim kontrolü ve kimlik doğrulama</li>
-                <li>Veri yedekleme ve kurtarma sistemleri</li>
+                <li>256-bit SSL encryption for data transfers.</li>
+                <li>Encrypted storage for sensitive records.</li>
+                <li>Regular security assessments.</li>
+                <li>Access controls and authentication safeguards.</li>
+                <li>Backup and disaster recovery procedures.</li>
               </ul>
             </div>
 
             <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              5. Veri Saklama
+              5. Data Retention
             </h2>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Yüklediğiniz dosyalar işlem tamamlandıktan sonra <strong>24 saat içinde</strong> 
-              silinir. Hesap bilgileriniz hesabınızı kapattığınızda veya yasal saklama süresi 
-              tamamlandığında silinir. Yasal yükümlülükler gereği bazı veriler daha uzun süre 
-              saklanabilir.
+              Uploaded files are deleted within <strong>24 hours</strong> of processing completion. Account information is removed when you close your account or once statutory retention periods expire.
+              Certain records may be retained longer when legally required.
             </p>
 
             <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              6. Veri Paylaşımı
+              6. Data Sharing
             </h2>
             <div className="text-gray-300 mb-6 leading-relaxed">
-              <p className="mb-4">Verilerinizi yalnızca aşağıdaki durumlarda paylaşırız:</p>
+              <p className="mb-4">We share your data only when:</p>
               <ul className="list-disc pl-8 space-y-2">
-                <li>Yasal zorunluluklar (mahkeme kararı, yasal süreç)</li>
-                <li>Güvenilir hizmet sağlayıcıları (ödeme işlemcisi, cloud servisi)</li>
-                <li>Açık onayınız ile</li>
+                <li>We must comply with legal obligations or lawful requests.</li>
+                <li>Trusted service providers support our operations (such as payment processors or cloud services).</li>
+                <li>You provide explicit consent.</li>
               </ul>
               <p className="mt-4 font-medium text-[#00c896]">
-                Verileriniz hiçbir zaman ticari amaçla üçüncü taraflarla paylaşılmaz.
+                We never sell your data to third parties.
               </p>
             </div>
 
             <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              7. Haklarınız
+              7. Your Rights
             </h2>
             <div className="text-gray-300 mb-6 leading-relaxed">
-              <p className="mb-4">KVKK ve GDPR kapsamında aşağıdaki haklarınız bulunmaktadır:</p>
+              <p className="mb-4">Under GDPR and KVKK you have the right to:</p>
               <ul className="list-disc pl-8 space-y-2">
-                <li>Verilerinize erişim hakkı</li>
-                <li>Veri düzeltme hakkı</li>
-                <li>Veri silme hakkı ("unutulma hakkı")</li>
-                <li>Veri taşınabilirlik hakkı</li>
-                <li>İşlemeye itiraz etme hakkı</li>
-                <li>Otomatik karar verme süreçlerine itiraz</li>
+                <li>Access the personal data we hold about you.</li>
+                <li>Request corrections to inaccurate data.</li>
+                <li>Request deletion of your data (the “right to be forgotten”).</li>
+                <li>Request data portability.</li>
+                <li>Object to data processing in certain circumstances.</li>
+                <li>Contest automated decision-making.</li>
               </ul>
             </div>
 
             <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              8. Çerezler
+              8. Cookies
             </h2>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Platformumuzda kullanıcı deneyimini iyileştirmek için çerezler kullanıyoruz. 
-              Çerez tercihlerinizi tarayıcı ayarlarından yönetebilirsiniz. Zorunlu çerezler 
-              platformun çalışması için gereklidir.
+              We use cookies to improve the user experience on our platform. You can manage cookie preferences through your browser settings.
+              Essential cookies are required for the platform to function properly.
             </p>
 
             <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              9. Değişiklikler
+              9. Changes
             </h2>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Bu gizlilik politikası güncellenebilir. Önemli değişiklikler e-posta ile 
-              bildirilir. Politika değişiklikleri bu sayfada yayınlandığı tarihte yürürlüğe girer.
+              This privacy policy may be updated from time to time. We will notify you by email about significant changes.
+              Updates take effect on the date they are posted here.
             </p>
 
             <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
-              10. İletişim
+              10. Contact
             </h2>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Gizlilik ile ilgili sorularınız için:
+              For any privacy-related questions:
               <br />
-              📧 E-posta: <a href="mailto:privacy@avenia.com" className="text-[#00c896] hover:underline">privacy@avenia.com</a>
+              📧 Email: <a href="mailto:privacy@avenia.com" className="text-[#00c896] hover:underline">privacy@avenia.com</a>
               <br />
-              📍 Adres: Maslak Mahallesi, Teknoloji Sitesi, İstanbul, Türkiye
+              📍 Address: Maslak District, Teknoloji Campus, Istanbul, Turkey
             </p>
 
             <div className="bg-[#00c896]/10 border border-[#00c896]/30 rounded-xl p-6 mt-8">
               <p className="text-[#00c896] font-medium">
-                🔒 Gizliliğiniz bizim önceliğimizdir. Sorularınız için her zaman bizimle iletişime geçebilirsiniz.
+                🔒 Your privacy is our priority. Reach out anytime if you have questions.
               </p>
             </div>
           </div>

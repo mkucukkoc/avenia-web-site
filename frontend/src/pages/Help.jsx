@@ -15,10 +15,10 @@ export default function Help() {
             <HelpCircle className="w-8 h-8 text-[#00c896]" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Yardım <span className="text-[#00c896]">Merkezi</span>
+            Help <span className="text-[#00c896]">Center</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Avenia hakkında merak ettiğiniz her şey. Sorularınızın yanıtlarını bulamadınız mı? Bizimle iletişime geçin.
+            Everything you want to learn about Avenia. Can't find the answer you're looking for? Contact our team.
           </p>
         </div>
 
@@ -28,7 +28,7 @@ export default function Help() {
             <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
             <input
               type="text"
-              placeholder="Aradığınız konuyu yazın..."
+              placeholder="Type what you're looking for..."
               className="w-full pl-12 pr-4 py-4 bg-gray-700/50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-[#00c896] focus:ring-2 focus:ring-[#00c896]/20 transition-all"
             />
           </div>
@@ -37,7 +37,7 @@ export default function Help() {
         {/* FAQ Section */}
         <div className="mb-16">
           <h2 className="text-2xl font-bold text-white mb-8 text-center">
-            Sık Sorulan Sorular
+            Frequently Asked Questions
           </h2>
           
           <Card className="bg-gray-800/30 border-gray-700/50 backdrop-blur-sm">
@@ -59,10 +59,10 @@ export default function Help() {
         {/* Contact Section */}
         <Card className="bg-gradient-to-r from-gray-800/40 to-gray-800/60 border-gray-700/50 p-8 text-center">
           <h3 className="text-2xl font-bold text-white mb-4">
-            Başka bir sorunuz mu var?
+            Still have a question?
           </h3>
           <p className="text-gray-300 mb-6">
-            Ekibimiz size yardımcı olmaktan mutluluk duyar. 24 saat içinde yanıtlıyoruz.
+            Our team is happy to help. We respond within 24 hours.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -70,14 +70,14 @@ export default function Help() {
               className="bg-[#00c896] hover:bg-[#00b085] text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 hover:shadow-lg hover:shadow-[#00c896]/25"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
-              Canlı Destek
+              Live Support
             </Button>
             <Button 
               variant="outline"
               className="border-gray-600 text-white hover:bg-gray-700 px-6 py-3 rounded-xl font-semibold transition-all duration-200"
             >
               <Mail className="w-5 h-5 mr-2" />
-              E-posta Gönder
+              Send Email
             </Button>
           </div>
         </Card>
@@ -88,24 +88,24 @@ export default function Help() {
             <div className="w-12 h-12 bg-[#00c896]/20 rounded-xl flex items-center justify-center mx-auto mb-4">
               <Search className="w-6 h-6 text-[#00c896]" />
             </div>
-            <h4 className="text-white font-semibold mb-2">API Dokümantasyonu</h4>
-            <p className="text-gray-400 text-sm">Geliştiriciler için teknik rehber</p>
+            <h4 className="text-white font-semibold mb-2">API Documentation</h4>
+            <p className="text-gray-400 text-sm">Technical guide for developers</p>
           </Card>
 
           <Card className="bg-gray-800/30 border-gray-700/50 p-6 text-center hover:border-[#00c896]/50 transition-all duration-200 hover:-translate-y-1">
             <div className="w-12 h-12 bg-[#00c896]/20 rounded-xl flex items-center justify-center mx-auto mb-4">
               <MessageCircle className="w-6 h-6 text-[#00c896]" />
             </div>
-            <h4 className="text-white font-semibold mb-2">Video Eğitimler</h4>
-            <p className="text-gray-400 text-sm">Adım adım kullanım kılavuzları</p>
+            <h4 className="text-white font-semibold mb-2">Video Tutorials</h4>
+            <p className="text-gray-400 text-sm">Step-by-step how-to guides</p>
           </Card>
 
           <Card className="bg-gray-800/30 border-gray-700/50 p-6 text-center hover:border-[#00c896]/50 transition-all duration-200 hover:-translate-y-1">
             <div className="w-12 h-12 bg-[#00c896]/20 rounded-xl flex items-center justify-center mx-auto mb-4">
               <HelpCircle className="w-6 h-6 text-[#00c896]" />
             </div>
-            <h4 className="text-white font-semibold mb-2">Topluluk</h4>
-            <p className="text-gray-400 text-sm">Diğer kullanıcılarla deneyim paylaşın</p>
+            <h4 className="text-white font-semibold mb-2">Community</h4>
+            <p className="text-gray-400 text-sm">Share experiences with other users</p>
           </Card>
         </div>
       </div>

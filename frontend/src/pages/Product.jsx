@@ -11,20 +11,20 @@ export default function Product() {
         {/* Hero Section */}
         <div className="text-center mb-20">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-[#00c896]/20 border border-[#00c896]/30 mb-8">
-            <span className="text-[#00c896] text-sm font-medium">🌟 Ürün</span>
+            <span className="text-[#00c896] text-sm font-medium">🌟 Product</span>
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300">
-              Yapay Zeka Destekli
+              AI-Powered
             </span>
             <br />
-            <span className="text-[#00c896]">İçerik Üretimi</span>
+            <span className="text-[#00c896]">Content Creation</span>
           </h1>
           
           <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            Avenia, yapay zekâ destekli içerik üretimi ve asistan uygulaması. 
-            Belgelerinizi özetleyin, görselleri analiz edin, ses-metin dönüşümü yapın.
+            Avenia is your AI-powered creation and assistant platform.
+            Summarize documents, analyze visuals, and convert between speech and text effortlessly.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
@@ -32,7 +32,7 @@ export default function Product() {
               size="lg"
               className="bg-[#00c896] hover:bg-[#00b085] text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 hover:shadow-xl hover:shadow-[#00c896]/25 hover:scale-105 group"
             >
-              Ücretsiz Dene
+              Try for Free
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             
@@ -42,7 +42,7 @@ export default function Product() {
               className="border-2 border-white/20 text-white hover:bg-white/10 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 hover:border-[#00c896] group"
             >
               <Play className="mr-2 w-5 h-5" />
-              Demo İzle
+              Watch Demo
             </Button>
           </div>
         </div>
@@ -50,7 +50,7 @@ export default function Product() {
         {/* Key Benefits */}
         <div className="mb-20">
           <h2 className="text-3xl font-bold text-white text-center mb-12">
-            Öne Çıkan <span className="text-[#00c896]">Faydalar</span>
+            Key <span className="text-[#00c896]">Benefits</span>
           </h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -58,16 +58,16 @@ export default function Product() {
               <div className="w-12 h-12 bg-[#00c896]/20 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">📄</span>
               </div>
-              <h3 className="text-white font-semibold mb-2">Belge Özetleme</h3>
-              <p className="text-gray-400 text-sm">PDF, Word, PowerPoint dosyalarınızı hızlıca özetleyin</p>
+              <h3 className="text-white font-semibold mb-2">Document Summaries</h3>
+              <p className="text-gray-400 text-sm">Summarize PDF, Word, and PowerPoint files in seconds.</p>
             </Card>
 
             <Card className="bg-gray-800/30 border-gray-700/50 p-6 text-center hover:border-[#00c896]/50 transition-all duration-200 hover:-translate-y-2">
               <div className="w-12 h-12 bg-[#00c896]/20 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🔍</span>
               </div>
-              <h3 className="text-white font-semibold mb-2">AI vs Real Analiz</h3>
-              <p className="text-gray-400 text-sm">Yapay zeka ile üretilen içerikleri tespit edin</p>
+              <h3 className="text-white font-semibold mb-2">AI vs Real Analysis</h3>
+              <p className="text-gray-400 text-sm">Detect AI-generated visuals with confidence.</p>
             </Card>
 
             <Card className="bg-gray-800/30 border-gray-700/50 p-6 text-center hover:border-[#00c896]/50 transition-all duration-200 hover:-translate-y-2">
@@ -75,15 +75,15 @@ export default function Product() {
                 <span className="text-2xl">🔊</span>
               </div>
               <h3 className="text-white font-semibold mb-2">TTS/STT</h3>
-              <p className="text-gray-400 text-sm">Ses-metin dönüşümü çok dilli destekle</p>
+              <p className="text-gray-400 text-sm">Convert speech and text with multilingual support.</p>
             </Card>
 
             <Card className="bg-gray-800/30 border-gray-700/50 p-6 text-center hover:border-[#00c896]/50 transition-all duration-200 hover:-translate-y-2">
               <div className="w-12 h-12 bg-[#00c896]/20 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🎥</span>
               </div>
-              <h3 className="text-white font-semibold mb-2">Görsel & Video</h3>
-              <p className="text-gray-400 text-sm">AI ile yaratıcı içerik üretimi</p>
+              <h3 className="text-white font-semibold mb-2">Images & Video</h3>
+              <p className="text-gray-400 text-sm">Generate creative visuals and videos with AI.</p>
             </Card>
           </div>
         </div>
@@ -91,7 +91,7 @@ export default function Product() {
         {/* Screenshots Section */}
         <div className="mb-20">
           <h2 className="text-3xl font-bold text-white text-center mb-12">
-            Ekran <span className="text-[#00c896]">Görüntüleri</span>
+            Product <span className="text-[#00c896]">Screens</span>
           </h2>
           
           <div className="grid lg:grid-cols-3 gap-8">
@@ -116,16 +116,16 @@ export default function Product() {
         {/* CTA Section */}
         <div className="text-center bg-gradient-to-r from-gray-800/40 to-gray-800/60 rounded-3xl p-12">
           <h2 className="text-3xl font-bold text-white mb-4">
-            Hemen <span className="text-[#00c896]">Başlayın</span>
+            Start <span className="text-[#00c896]">Now</span>
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            Ücretsiz hesabınızı oluşturun ve AI gücünü keşfedin
+            Create your free account and explore the power of AI.
           </p>
           <Button 
             size="lg"
             className="bg-[#00c896] hover:bg-[#00b085] text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-200 hover:shadow-2xl hover:shadow-[#00c896]/30 hover:scale-105"
           >
-            Ücretsiz Hesap Oluştur
+            Create a Free Account
           </Button>
         </div>
       </div>

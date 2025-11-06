@@ -12,49 +12,49 @@ export default function Status() {
 
   const services = [
     {
-      name: 'API Servisleri',
+      name: 'API Services',
       status: 'operational',
-      description: 'Tüm API endpointları normal çalışıyor',
+      description: 'All API endpoints are operating normally.',
       icon: Server,
       uptime: '99.98%',
       responseTime: '125ms'
     },
     {
-      name: 'Belge İşleme',
+      name: 'Document Processing',
       status: 'operational', 
-      description: 'PDF/Word/PPT özetleme servisleri aktif',
+      description: 'PDF/Word/PPT summarization services are available.',
       icon: Activity,
       uptime: '99.95%',
       responseTime: '2.3s'
     },
     {
-      name: 'Görsel Analizi',
+      name: 'Visual Analysis',
       status: 'operational',
-      description: 'AI vs Real görsel/video analizi çalışıyor',
+      description: 'AI vs real image/video detection is running smoothly.',
       icon: Activity,
       uptime: '99.99%',
       responseTime: '1.8s'
     },
     {
-      name: 'TTS/STT Servisleri',
+      name: 'TTS/STT Services',
       status: 'operational',
-      description: 'Ses-metin dönüşüm servisleri aktif',
+      description: 'Speech-to-text conversion services are active.',
       icon: Activity,
       uptime: '99.96%',
       responseTime: '3.1s'
     },
     {
-      name: 'Veritabanı',
+      name: 'Database',
       status: 'operational',
-      description: 'MongoDB cluster sağlıklı çalışıyor',
+      description: 'MongoDB cluster remains healthy.',
       icon: Database,
       uptime: '99.99%',
       responseTime: '45ms'
     },
     {
-      name: 'CDN & Statik Dosyalar',
+      name: 'CDN & Static Assets',
       status: 'operational',
-      description: 'İçerik dağıtım ağı normal hızda',
+      description: 'Content delivery network performing at normal speed.',
       icon: Globe,
       uptime: '99.97%',
       responseTime: '89ms'
@@ -64,27 +64,27 @@ export default function Status() {
   const incidents = [
     {
       date: '2024-12-10',
-      title: 'API Yanıt Sürelerinde Gecikme',
+      title: 'API Response Latency',
       status: 'resolved',
       severity: 'minor',
-      description: 'Yoğun trafikten dolayı API yanıt süreleri normalden 2x yavaştı. Load balancer optimizasyonu ile çözüldü.',
-      duration: '45 dakika'
+      description: 'Heavy traffic caused API responses to run twice as slow as usual. Load balancer optimizations resolved the issue.',
+      duration: '45 minutes'
     },
     {
       date: '2024-12-03', 
-      title: 'TTS Servisinde Kesinti',
+      title: 'TTS Service Outage',
       status: 'resolved',
       severity: 'major',
-      description: 'Üçüncü taraf TTS sağlayıcısında yaşanan sorun nedeniyle ses sentezi çalışmadı.',
-      duration: '2 saat 15 dakika'
+      description: 'A third-party TTS provider outage temporarily disabled speech synthesis.',
+      duration: '2 hours 15 minutes'
     },
     {
       date: '2024-11-28',
-      title: 'Planlı Bakım',
+      title: 'Scheduled Maintenance',
       status: 'resolved', 
       severity: 'maintenance',
-      description: 'Veritabanı performans optimizasyonu için planlı bakım gerçekleştirildi.',
-      duration: '1 saat'
+      description: 'Performed planned maintenance to optimize database performance.',
+      duration: '1 hour'
     }
   ];
 
@@ -117,26 +117,26 @@ export default function Status() {
   const getStatusText = (status) => {
     switch (status) {
       case 'operational':
-        return 'Normal Çalışıyor';
+        return 'Operational';
       case 'degraded':
-        return 'Performans Düşük';
+        return 'Degraded Performance';
       case 'outage':
-        return 'Hizmet Dışı';
+        return 'Service Outage';
       default:
-        return 'Bilinmiyor';
+        return 'Unknown';
     }
   };
 
   const getSeverityBadge = (severity) => {
     switch (severity) {
       case 'minor':
-        return <Badge className="bg-yellow-500/20 text-yellow-500 border-yellow-500/30">Küçük</Badge>;
+        return <Badge className="bg-yellow-500/20 text-yellow-500 border-yellow-500/30">Minor</Badge>;
       case 'major':
-        return <Badge className="bg-red-500/20 text-red-500 border-red-500/30">Büyük</Badge>;
+        return <Badge className="bg-red-500/20 text-red-500 border-red-500/30">Major</Badge>;
       case 'maintenance':
-        return <Badge className="bg-blue-500/20 text-blue-500 border-blue-500/30">Bakım</Badge>;
+        return <Badge className="bg-blue-500/20 text-blue-500 border-blue-500/30">Maintenance</Badge>;
       default:
-        return <Badge className="bg-gray-500/20 text-gray-500 border-gray-500/30">Bilgi</Badge>;
+        return <Badge className="bg-gray-500/20 text-gray-500 border-gray-500/30">Info</Badge>;
     }
   };
 
@@ -146,53 +146,53 @@ export default function Status() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-[#00c896]/20 border border-[#00c896]/30 mb-8">
-            <span className="text-[#00c896] text-sm font-medium">📊 Sistem Durumu</span>
+            <span className="text-[#00c896] text-sm font-medium">📊 System Status</span>
           </div>
           
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Sistem <span className="text-[#00c896]">Durumu</span>
+            Service <span className="text-[#00c896]">Status</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Avenia servislerinin anlık durumu ve geçmiş kesinti bilgileri
+            Live status of Avenia services plus recent incident history.
           </p>
         </div>
 
         {/* Overall Status */}
         <Card className="bg-gray-800/30 border-gray-700/50 p-8 mb-12">
           <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-2">
                 {getStatusIcon(systemStatus.overall)}
-                <h2 className="text-2xl font-bold text-white">Genel Durum</h2>
+                <h2 className="text-2xl font-bold text-white">Overall Status</h2>
               </div>
               <Badge className={`${systemStatus.overall === 'operational' ? 'bg-green-500/20 text-green-500 border-green-500/30' : 'bg-red-500/20 text-red-500 border-red-500/30'}`}>
-                {systemStatus.overall === 'operational' ? 'Tüm Sistemler Normal' : 'Sistemde Sorun Var'}
+                {systemStatus.overall === 'operational' ? 'All Systems Operational' : 'Issues Detected'}
               </Badge>
             </div>
             <div className="text-right">
               <div className="text-2xl font-bold text-[#00c896]">{systemStatus.uptime}</div>
-              <div className="text-gray-400 text-sm">30 gün uptime</div>
+              <div className="text-gray-400 text-sm">30-day uptime</div>
             </div>
           </div>
           
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
               <div className="text-[#00c896] font-bold text-xl">99.97%</div>
-              <div className="text-gray-400 text-sm">Bu Ay Uptime</div>
+              <div className="text-gray-400 text-sm">Uptime this month</div>
             </div>
             <div className="text-center">
               <div className="text-[#00c896] font-bold text-xl">145ms</div>
-              <div className="text-gray-400 text-sm">Ortalama Yanıt Süresi</div>
+              <div className="text-gray-400 text-sm">Average response time</div>
             </div>
             <div className="text-center">
               <div className="text-[#00c896] font-bold text-xl">0</div>
-              <div className="text-gray-400 text-sm">Aktif Kesinti</div>
+              <div className="text-gray-400 text-sm">Active incidents</div>
             </div>
           </div>
           
           <div className="mt-4 text-center">
             <p className="text-gray-400 text-sm">
-              Son güncelleme: {systemStatus.lastUpdate}
+              Last updated: {systemStatus.lastUpdate}
             </p>
           </div>
         </Card>
@@ -200,7 +200,7 @@ export default function Status() {
         {/* Services Status */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-white mb-8">
-            Servis <span className="text-[#00c896]">Durumları</span>
+            Service <span className="text-[#00c896]">Status</span>
           </h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -224,7 +224,7 @@ export default function Status() {
                   
                   <div className="space-y-2">
                     <div className="flex justify-between">
-                      <span className="text-gray-400 text-sm">Durum:</span>
+                      <span className="text-gray-400 text-sm">Status:</span>
                       <span className={`text-sm font-medium ${getStatusColor(service.status)}`}>
                         {getStatusText(service.status)}
                       </span>
@@ -234,7 +234,7 @@ export default function Status() {
                       <span className="text-white text-sm font-medium">{service.uptime}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-400 text-sm">Yanıt Süresi:</span>
+                      <span className="text-gray-400 text-sm">Response time:</span>
                       <span className="text-white text-sm font-medium">{service.responseTime}</span>
                     </div>
                   </div>
@@ -247,7 +247,7 @@ export default function Status() {
         {/* Incident History */}
         <div>
           <h2 className="text-3xl font-bold text-white mb-8">
-            Geçmiş <span className="text-[#00c896]">Kesintiler</span>
+            Incident <span className="text-[#00c896]">History</span>
           </h2>
           
           <div className="space-y-6">
@@ -259,13 +259,13 @@ export default function Status() {
                       <h3 className="text-white font-semibold">{incident.title}</h3>
                       {getSeverityBadge(incident.severity)}
                       <Badge className="bg-green-500/20 text-green-500 border-green-500/30">
-                        Çözüldü
+                        Resolved
                       </Badge>
                     </div>
                     <p className="text-gray-300 text-sm mb-3">{incident.description}</p>
                     <div className="flex items-center space-x-6 text-sm text-gray-400">
                       <span>📅 {incident.date}</span>
-                      <span>⏱️ Etkilenme süresi: {incident.duration}</span>
+                      <span>⏱️ Impact duration: {incident.duration}</span>
                     </div>
                   </div>
                 </div>
@@ -277,25 +277,25 @@ export default function Status() {
         {/* Subscribe to Updates */}
         <Card className="bg-gradient-to-r from-gray-800/40 to-gray-800/60 p-12 text-center mt-16">
           <h2 className="text-3xl font-bold text-white mb-4">
-            Durum <span className="text-[#00c896]">Güncellemeleri</span>
+            Status <span className="text-[#00c896]">Updates</span>
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            Sistem durumu değişikliklerinden haberdar olmak için abone olun
+            Subscribe to stay informed about changes to system availability.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
             <input
               type="email"
-              placeholder="E-posta adresiniz"
+              placeholder="Your email address"
               className="flex-1 px-4 py-3 bg-gray-700 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-[#00c896]"
             />
             <button className="bg-[#00c896] hover:bg-[#00b085] text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 hover:shadow-lg hover:shadow-[#00c896]/25">
-              Abone Ol
+              Subscribe
             </button>
           </div>
           
           <p className="text-gray-400 text-sm mt-4">
-            Sadece önemli güncellemeler gönderilir. Spam yapmayız.
+            We only send critical updates—never spam.
           </p>
         </Card>
       </div>

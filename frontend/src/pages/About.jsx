@@ -10,37 +10,34 @@ export default function About() {
         {/* Header */}
         <div className="text-center mb-20">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-[#00c896]/20 border border-[#00c896]/30 mb-8">
-            <span className="text-[#00c896] text-sm font-medium">🏢 Şirket</span>
+            <span className="text-[#00c896] text-sm font-medium">🏢 Company</span>
           </div>
           
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            <span className="text-[#00c896]">Avenia</span> Hakkında
+            About <span className="text-[#00c896]">Avenia</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Yapay zeka teknolojilerini herkes için erişilebilir kılma misyonuyla yola çıktık. 
-            Türkiye'nin öncü AI asistan platformunu geliştiriyoruz.
+            We started with the mission of making AI technology accessible to everyone.
+            Today we are building the leading AI assistant platform from Turkey for the world.
           </p>
         </div>
 
         {/* Company Story */}
         <div className="grid lg:grid-cols-2 gap-12 mb-20">
           <div>
-            <h2 className="text-3xl font-bold text-white mb-6">Hikayemiz</h2>
+            <h2 className="text-3xl font-bold text-white mb-6">Our Story</h2>
             <div className="space-y-4 text-gray-300 leading-relaxed">
               <p>
-                Avenia, 2024 yılında Türkiye'de yapay zeka teknolojilerini günlük yaşama entegre etme 
-                vizyonuyla kuruldu. Ekibimiz, yıllarca büyük teknoloji şirketlerinde çalışmış 
-                deneyimli mühendisler ve araştırmacılardan oluşuyor.
+                Avenia was founded in 2024 in Turkey with the vision of bringing AI technology into everyday life.
+                Our team is made up of experienced engineers and researchers who have spent years working at leading tech companies.
               </p>
               <p>
-                İlk günden itibaren amacımız, karmaşık AI teknolojilerini basit ve kullanıcı dostu 
-                arayüzlerle sunmak oldu. Belge özetlemeden görsel analizine, ses işlemeden metin 
-                üretimine kadar geniş bir yelpazede hizmet veriyoruz.
+                From the very beginning our goal has been to deliver complex AI through simple, user-friendly experiences.
+                We support a wide range of use cases—from document summarization and visual analysis to speech processing and content generation.
               </p>
               <p>
-                Bugün binlerce kullanıcının günlük iş akışlarını kolaylaştırıyor, 
-                verimliliğini artırıyoruz. Geleceğe dönük vizyonumuz ise AI'ı her kesimden 
-                insanın hayatına dokunacak şekilde demokratikleştirmek.
+                Today we help thousands of people streamline their daily workflows and boost productivity.
+                Looking ahead, our vision is to democratize AI so it can positively impact lives everywhere.
               </p>
             </div>
           </div>
@@ -53,7 +50,7 @@ export default function About() {
                 </div>
                 <div>
                   <div className="text-2xl font-bold text-white">1000+</div>
-                  <div className="text-gray-400">Aktif Kullanıcı</div>
+                  <div className="text-gray-400">Active Users</div>
                 </div>
               </div>
             </Card>
@@ -65,7 +62,7 @@ export default function About() {
                 </div>
                 <div>
                   <div className="text-2xl font-bold text-white">50K+</div>
-                  <div className="text-gray-400">İşlenen Dosya</div>
+                  <div className="text-gray-400">Files Processed</div>
                 </div>
               </div>
             </Card>
@@ -77,7 +74,7 @@ export default function About() {
                 </div>
                 <div>
                   <div className="text-2xl font-bold text-white">4.9/5</div>
-                  <div className="text-gray-400">Kullanıcı Memnuniyeti</div>
+                  <div className="text-gray-400">Customer Satisfaction</div>
                 </div>
               </div>
             </Card>
@@ -90,10 +87,9 @@ export default function About() {
             <div className="w-16 h-16 bg-[#00c896]/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
               <Target className="w-8 h-8 text-[#00c896]" />
             </div>
-            <h3 className="text-2xl font-bold text-white mb-4">Misyonumuz</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">Our Mission</h3>
             <p className="text-gray-300 leading-relaxed">
-              Yapay zeka teknolojilerini herkes için erişilebilir, anlaşılır ve faydalı hale getirerek 
-              toplumsal verimliliği artırmak.
+              Make AI technology accessible, understandable, and genuinely useful for everyone—so entire communities can benefit from higher productivity.
             </p>
           </Card>
 
@@ -101,10 +97,9 @@ export default function About() {
             <div className="w-16 h-16 bg-[#00c896]/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
               <Eye className="w-8 h-8 text-[#00c896]" />
             </div>
-            <h3 className="text-2xl font-bold text-white mb-4">Vizyonumuz</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">Our Vision</h3>
             <p className="text-gray-300 leading-relaxed">
-              Türkiye'nin önde gelen AI platformu olarak küresel ölçekte teknoloji lideri olmak ve 
-              AI alanında öncü çözümler geliştirmek.
+              Become the leading AI platform founded in Turkey and build pioneering solutions that set the standard globally.
             </p>
           </Card>
 
@@ -112,10 +107,9 @@ export default function About() {
             <div className="w-16 h-16 bg-[#00c896]/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
               <Heart className="w-8 h-8 text-[#00c896]" />
             </div>
-            <h3 className="text-2xl font-bold text-white mb-4">Değerlerimiz</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">Our Values</h3>
             <p className="text-gray-300 leading-relaxed">
-              Şeffaflık, kullanıcı odaklılık, sürekli öğrenme ve etik AI geliştirme prensipleriyle 
-              hareket ediyoruz.
+              We act with transparency, user focus, continuous learning, and ethical AI development as our core principles.
             </p>
           </Card>
         </div>
@@ -123,7 +117,7 @@ export default function About() {
         {/* Team Section */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-white text-center mb-12">
-            Kurucu <span className="text-[#00c896]">Ekibimiz</span>
+            Our <span className="text-[#00c896]">Founding Team</span>
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -147,42 +141,38 @@ export default function About() {
         {/* Values in Detail */}
         <Card className="bg-gradient-to-r from-gray-800/40 to-gray-800/60 p-12">
           <h2 className="text-3xl font-bold text-white text-center mb-8">
-            Çalışma <span className="text-[#00c896]">Prensipleri</span>
+            Operating <span className="text-[#00c896]">Principles</span>
           </h2>
           
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-6">
               <div>
-                <h3 className="text-xl font-semibold text-white mb-3">🔒 Gizlilik Önceliği</h3>
+                <h3 className="text-xl font-semibold text-white mb-3">🔒 Privacy First</h3>
                 <p className="text-gray-300">
-                  Kullanıcı verilerinin korunması bizim için en önemli konudur. 
-                  GDPR ve KVKK standartlarında veri işleme gerçekleştiriyoruz.
+                  Protecting user data is non-negotiable. We process information under GDPR and KVKK standards from day one.
                 </p>
               </div>
               
               <div>
-                <h3 className="text-xl font-semibold text-white mb-3">⚡ Sürekli İnovasyon</h3>
+                <h3 className="text-xl font-semibold text-white mb-3">⚡ Continuous Innovation</h3>
                 <p className="text-gray-300">
-                  AI teknolojilerindeki gelişmeleri yakından takip ediyor, 
-                  en son teknolojileri platformumuza entegre ediyoruz.
+                  We track the latest developments in AI and ship new capabilities to our platform as soon as they prove real value.
                 </p>
               </div>
             </div>
             
             <div className="space-y-6">
               <div>
-                <h3 className="text-xl font-semibold text-white mb-3">🌍 Türkçe Odaklı</h3>
+                <h3 className="text-xl font-semibold text-white mb-3">🌍 Native Language Expertise</h3>
                 <p className="text-gray-300">
-                  Türkçe dil işleme konusunda uzmanlaşarak yerel ihtiyaçlara 
-                  en uygun çözümleri geliştiriyoruz.
+                  We specialize in Turkish language processing to deliver solutions tailored to local needs while staying ready for global expansion.
                 </p>
               </div>
               
               <div>
-                <h3 className="text-xl font-semibold text-white mb-3">🤝 Topluluk Destekli</h3>
+                <h3 className="text-xl font-semibold text-white mb-3">🤝 Community-Driven</h3>
                 <p className="text-gray-300">
-                  Kullanıcı geri bildirimlerini dinliyor, önerilerini ürün 
-                  geliştirme sürecine dahil ediyoruz.
+                  We listen closely to user feedback and bring their suggestions into our product roadmap.
                 </p>
               </div>
             </div>

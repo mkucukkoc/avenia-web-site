@@ -20,8 +20,8 @@ export const Footer = () => {
               <span className="text-2xl font-bold text-white">Avenia</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
-              Yapay zeka destekli çok amaçlı asistan platformu.
-              Belgelerinizi özetleyin, görselleri analiz edin, AI gücünü keşfedin.
+              AI-powered multi-purpose assistant platform.
+              Summarize documents, analyze visuals, and unlock the full power of AI.
             </p>
 
             {/* Social Links */}
@@ -38,7 +38,7 @@ export const Footer = () => {
 
           {/* Product Links */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Ürün</h3>
+            <h3 className="text-white font-semibold mb-4">Product</h3>
             <ul className="space-y-3">
               {footerLinks.product.map((link) => (
                 <li key={link.href}>
@@ -53,7 +53,7 @@ export const Footer = () => {
 
           {/* Company Links */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Şirket</h3>
+            <h3 className="text-white font-semibold mb-4">Company</h3>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.href}>
@@ -68,7 +68,7 @@ export const Footer = () => {
 
           {/* Support Links */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Destek</h3>
+            <h3 className="text-white font-semibold mb-4">Support</h3>
             <ul className="space-y-3">
               {footerLinks.support.map((link) => (
                 <li key={link.href}>
@@ -85,7 +85,7 @@ export const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2024 Avenia. Tüm hakları saklıdır.
+              © 2024 Avenia. All rights reserved.
             </div>
             <div className="flex space-x-6">
               {footerLinks.legal.map((link) => (

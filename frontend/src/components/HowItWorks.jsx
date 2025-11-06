@@ -15,10 +15,10 @@ export const HowItWorks = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Nasıl <span className="text-[#00c896]">Çalışır?</span>
+            How It <span className="text-[#00c896]">Works</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Sadece 3 basit adımda AI gücünü kullanmaya başlayın
+            Start harnessing AI in just three simple steps.
           </p>
         </div>
 
@@ -59,7 +59,7 @@ export const HowItWorks = () => {
         {/* Bottom Note */}
         <div className="text-center mt-16">
           <div className="inline-flex items-center px-6 py-3 rounded-full bg-[#00c896]/10 border border-[#00c896]/30">
-            <span className="text-[#00c896] font-medium">⚡ Ortalama işlem süresi: 2-5 saniye</span>
+            <span className="text-[#00c896] font-medium">⚡ Average processing time: 2-5 seconds</span>
           </div>
         </div>
       </div>

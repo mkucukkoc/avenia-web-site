@@ -28,28 +28,28 @@ export const PremiumBanner = () => {
             {/* Title */}
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-[#00c896]">
-                Premium'a Geçin
+                Upgrade to Premium
               </span>
             </h2>
 
             {/* Description */}
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Sınırsız kullanım, öncelikli işlem ve gelişmiş AI modelleri ile verimliliğinizi maksimuma çıkarın
+              Unlock unlimited usage, priority processing, and advanced AI models to maximize productivity.
             </p>
 
             {/* Features */}
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <div className="text-center">
                 <div className="text-[#00c896] font-bold text-lg">∞</div>
-                <div className="text-gray-300 text-sm">Sınırsız Kullanım</div>
+                <div className="text-gray-300 text-sm">Unlimited Usage</div>
               </div>
               <div className="text-center">
                 <div className="text-[#00c896] font-bold text-lg">⚡</div>
-                <div className="text-gray-300 text-sm">Öncelikli İşlem</div>
+                <div className="text-gray-300 text-sm">Priority Processing</div>
               </div>
               <div className="text-center">
                 <div className="text-[#00c896] font-bold text-lg">🤖</div>
-                <div className="text-gray-300 text-sm">Premium AI Modelleri</div>
+                <div className="text-gray-300 text-sm">Premium AI Models</div>
               </div>
             </div>
 
@@ -58,11 +58,11 @@ export const PremiumBanner = () => {
               size="lg"
               className="bg-gradient-to-r from-purple-500 to-[#00c896] hover:from-purple-600 hover:to-[#00b085] text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 hover:shadow-xl hover:shadow-purple-500/25 hover:scale-105"
             >
-              Premium'a Geç - ₺29/ay
+              Upgrade to Premium – $29/mo
             </Button>
 
             <p className="text-gray-400 text-sm mt-4">
-              İlk 7 gün ücretsiz • İstediğin zaman iptal et
+              7-day free trial • Cancel anytime
             </p>
           </div>
         </div>

@@ -19,15 +19,15 @@ export default function Features() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-[#00c896]/20 border border-[#00c896]/30 mb-8">
-            <span className="text-[#00c896] text-sm font-medium">⚡ Özellikler</span>
+            <span className="text-[#00c896] text-sm font-medium">⚡ Features</span>
           </div>
           
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Detaylı <span className="text-[#00c896]">Özellik Listesi</span>
+            Detailed <span className="text-[#00c896]">Feature List</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Avenia'nın sunduğu tüm yapay zeka destekli özelliklerini keşfedin. 
-            Her özellik, iş akışınızı hızlandırmak için tasarlandı.
+            Explore every AI-powered capability Avenia offers.
+            Each feature is designed to accelerate your workflow.
           </p>
         </div>
 
@@ -71,24 +71,24 @@ export default function Features() {
           <Card className="bg-gray-800/30 border-gray-700/50 p-8">
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
               <Shield className="w-6 h-6 text-[#00c896] mr-3" />
-              Güvenlik & Altyapı
+              Security & Infrastructure
             </h3>
             <ul className="space-y-4 text-gray-300">
               <li className="flex items-start">
                 <div className="w-2 h-2 bg-[#00c896] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span><strong>Firebase Güvenli Depolama:</strong> Verileriniz şifreli olarak saklanır</span>
+                <span><strong>Secure Firebase Storage:</strong> Your data is stored in an encrypted environment.</span>
               </li>
               <li className="flex items-start">
                 <div className="w-2 h-2 bg-[#00c896] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span><strong>256-bit SSL Şifreleme:</strong> Tüm veri aktarımları korunur</span>
+                <span><strong>256-bit SSL Encryption:</strong> Every data transfer stays protected.</span>
               </li>
               <li className="flex items-start">
                 <div className="w-2 h-2 bg-[#00c896] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span><strong>GDPR & KVKK Uyumlu:</strong> Gizliliğiniz bizim önceliğimiz</span>
+                <span><strong>GDPR & KVKK Compliance:</strong> Privacy is treated as a first-class priority.</span>
               </li>
               <li className="flex items-start">
                 <div className="w-2 h-2 bg-[#00c896] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span><strong>99.9% Uptime:</strong> Kesintisiz hizmet garantisi</span>
+                <span><strong>99.9% Uptime:</strong> Guaranteed continuity of service.</span>
               </li>
             </ul>
           </Card>
@@ -96,24 +96,24 @@ export default function Features() {
           <Card className="bg-gray-800/30 border-gray-700/50 p-8">
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
               <Zap className="w-6 h-6 text-[#00c896] mr-3" />
-              Performans & Limits
+              Performance & Limits
             </h3>
             <ul className="space-y-4 text-gray-300">
               <li className="flex items-start">
                 <div className="w-2 h-2 bg-[#00c896] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span><strong>Hızlı İşlem:</strong> Ortalama 2-5 saniye yanıt süresi</span>
+                <span><strong>Lightning-Fast Processing:</strong> Average response times of 2–5 seconds.</span>
               </li>
               <li className="flex items-start">
                 <div className="w-2 h-2 bg-[#00c896] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span><strong>Dosya Boyutu:</strong> Ücretsizde 10MB, Premium'da 100MB</span>
+                <span><strong>File Size:</strong> 10 MB on Free, 100 MB on Premium.</span>
               </li>
               <li className="flex items-start">
                 <div className="w-2 h-2 bg-[#00c896] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span><strong>Dil Desteği:</strong> 50+ dilde TTS/STT</span>
+                <span><strong>Language Support:</strong> TTS/STT in 50+ languages.</span>
               </li>
               <li className="flex items-start">
                 <div className="w-2 h-2 bg-[#00c896] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span><strong>Format Desteği:</strong> PDF, Word, PPT, JPG, PNG, MP4</span>
+                <span><strong>Format Support:</strong> PDF, Word, PPT, JPG, PNG, MP4.</span>
               </li>
             </ul>
           </Card>

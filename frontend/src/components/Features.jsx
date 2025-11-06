@@ -18,10 +18,10 @@ export const Features = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Güçlü <span className="text-[#00c896]">AI Özellikleri</span>
+            Powerful <span className="text-[#00c896]">AI Features</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Avenia, en son yapay zeka teknolojilerini kullanarak iş akışınızı hızlandırır
+            Avenia accelerates your workflow with the latest AI technology.
           </p>
         </div>
 
@@ -57,9 +57,9 @@ export const Features = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <p className="text-gray-400 mb-4">Ve daha fazlası...</p>
+          <p className="text-gray-400 mb-4">And there is more...</p>
           <div className="inline-flex items-center px-6 py-3 rounded-full bg-[#00c896]/10 border border-[#00c896]/30">
-            <span className="text-[#00c896] font-medium">Sürekli yeni özellikler ekliyoruz</span>
+            <span className="text-[#00c896] font-medium">We keep shipping new features</span>
           </div>
         </div>
       </div>
