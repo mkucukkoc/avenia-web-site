@@ -114,30 +114,6 @@ export default function About() {
           </Card>
         </div>
 
-        {/* Team Section */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-white text-center mb-12">
-            Our <span className="text-[#00c896]">Founding Team</span>
-          </h2>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {teamMembers.map((member, index) => (
-              <Card key={index} className="bg-gray-800/30 border-gray-700/50 p-8 text-center hover:border-[#00c896]/50 transition-all duration-200 hover:-translate-y-2">
-                <div className="w-24 h-24 mx-auto mb-6 rounded-2xl overflow-hidden">
-                  <img 
-                    src={member.image} 
-                    alt={member.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-2">{member.name}</h3>
-                <p className="text-[#00c896] font-medium mb-4">{member.role}</p>
-                <p className="text-gray-300 text-sm leading-relaxed">{member.bio}</p>
-              </Card>
-            ))}
-          </div>
-        </div>
-
         {/* Values in Detail */}
         <Card className="bg-gradient-to-r from-gray-800/40 to-gray-800/60 p-12">
           <h2 className="text-3xl font-bold text-white text-center mb-8">
