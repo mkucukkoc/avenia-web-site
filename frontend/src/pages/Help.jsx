@@ -22,18 +22,6 @@ export default function Help() {
           </p>
         </div>
 
-        {/* Search Box */}
-        <Card className="bg-gray-800/50 border-gray-700/50 p-6 mb-12">
-          <div className="relative">
-            <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-            <input
-              type="text"
-              placeholder="Type what you're looking for..."
-              className="w-full pl-12 pr-4 py-4 bg-gray-700/50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-[#00c896] focus:ring-2 focus:ring-[#00c896]/20 transition-all"
-            />
-          </div>
-        </Card>
-
         {/* FAQ Section */}
         <div className="mb-16">
           <h2 className="text-2xl font-bold text-white mb-8 text-center">
@@ -73,11 +61,17 @@ export default function Help() {
               Live Support
             </Button>
             <Button 
+              asChild
               variant="outline"
               className="border-gray-600 text-white hover:bg-gray-700 px-6 py-3 rounded-xl font-semibold transition-all duration-200"
             >
-              <Mail className="w-5 h-5 mr-2" />
-              Send Email
+              <a
+                href="mailto:support@aveniaichat.com"
+                className="flex items-center"
+              >
+                <Mail className="w-5 h-5 mr-2" />
+                Send Email
+              </a>
             </Button>
           </div>
         </Card>
