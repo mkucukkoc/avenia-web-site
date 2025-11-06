@@ -178,9 +178,9 @@ export const pricingPlans = [
   },
   {
     name: "Premium",
-    price: "$29",
+    price: "$7",
     period: "/month",
-    yearlyPrice: "$290",
+    yearlyPrice: "$60",
     yearlyPeriod: "/year",
     description: "Built for professionals",
     features: [

@@ -85,13 +85,25 @@ export default function Pricing() {
                 </div>
 
                 <Button 
+                  asChild={plan.name === 'Premium'}
                   className={`w-full py-3 rounded-xl font-semibold transition-all duration-200 ${
                     plan.popular
                       ? 'bg-[#00c896] hover:bg-[#00b085] text-white hover:shadow-lg hover:shadow-[#00c896]/25'
                       : 'bg-gray-700 hover:bg-gray-600 text-white'
                   }`}
                 >
-                  {plan.buttonText}
+                  {plan.name === 'Premium' ? (
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.aveniaichat"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center"
+                    >
+                      {plan.buttonText}
+                    </a>
+                  ) : (
+                    plan.buttonText
+                  )}
                 </Button>
               </div>
 
