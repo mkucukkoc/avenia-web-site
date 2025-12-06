@@ -1,0 +1,15 @@
+[
+    {
+      "relation": [
+        "delegate_permission/common.handle_all_urls",
+        "delegate_permission/common.get_login_creds"
+      ],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.aveniaichat",
+        "sha256_cert_fingerprints": [
+          "4F:C0:3F:92:99:D8:95:A0:98:F6:04:2E:05:11:ED:EC:DB:AF:01:B8:CD:36:8B:3B:A1:82:DD:8A:FA:E2:66:D4"
+        ]
+      }
+    }
+  ]
