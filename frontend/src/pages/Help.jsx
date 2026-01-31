@@ -45,6 +45,20 @@ export default function Help() {
         </div>
 
         {/* Contact Section */}
+        <Card className="bg-gray-800/30 border-gray-700/50 p-6 mb-12">
+          <h3 className="text-xl font-semibold text-white mb-2">Account & Data Deletion</h3>
+          <p className="text-gray-300 mb-4">
+            You can request deletion of your Avenia account and personal data from this page:
+          </p>
+          <a
+            href="/account-delete"
+            className="inline-flex items-center text-[#00c896] hover:underline font-semibold"
+          >
+            https://aveniaichat.com/account-delete
+          </a>
+        </Card>
+
+        {/* Contact Section */}
         <Card className="bg-gradient-to-r from-gray-800/40 to-gray-800/60 border-gray-700/50 p-8 text-center">
           <h3 className="text-2xl font-bold text-white mb-4">
             Still have a question?

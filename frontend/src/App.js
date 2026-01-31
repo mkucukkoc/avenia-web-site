@@ -5,6 +5,7 @@ import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import Home from "./pages/Home";
 import Help from "./pages/Help";
+import AccountDelete from "./pages/AccountDelete";
 import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
 import Product from "./pages/Product";
@@ -23,6 +24,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/help" element={<Help />} />
+          <Route path="/account-delete" element={<AccountDelete />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/product" element={<Product />} />

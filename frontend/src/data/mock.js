@@ -145,6 +145,7 @@ export const footerLinks = {
   legal: [
     { label: "Terms of Use", href: "/terms" },
     { label: "Privacy Policy", href: "/privacy" },
+    { label: "Account Deletion", href: "/account-delete" },
     { label: "Cookie Policy", href: "/cookies" }
   ],
   support: [
