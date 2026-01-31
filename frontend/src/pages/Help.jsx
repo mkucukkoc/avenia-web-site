@@ -54,7 +54,7 @@ export default function Help() {
             href="/account-delete"
             className="inline-flex items-center text-[#00c896] hover:underline font-semibold"
           >
-            https://aveniaichat.com/account-delete
+            Click here
           </a>
         </Card>
 
