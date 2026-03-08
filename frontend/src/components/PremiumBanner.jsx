@@ -1,8 +1,28 @@
 import React from 'react';
 import { Button } from './ui/button';
 import { Crown, Sparkles } from 'lucide-react';
+import { useLanguage } from '../i18n';
 
 export const PremiumBanner = () => {
+  const { lang } = useLanguage();
+  const copy = {
+    en: {
+      title: 'Upgrade to Premium',
+      description: 'Unlock unlimited usage, priority processing, and advanced AI models to maximize productivity.',
+      features: ['Unlimited Usage', 'Priority Processing', 'Premium AI Models'],
+      cta: 'Upgrade to Premium – $7/mo',
+      note: '7-day free trial • Cancel anytime',
+    },
+    tr: {
+      title: 'Premium’a Yükselt',
+      description: 'Sınırsız kullanım, öncelikli işlem ve gelişmiş AI modelleriyle üretkenliğinizi artırın.',
+      features: ['Sınırsız Kullanım', 'Öncelikli İşlem', 'Premium AI Modelleri'],
+      cta: 'Premium’a Geç – $7/ay',
+      note: '7 gün ücretsiz deneme • İstediğin zaman iptal',
+    },
+  };
+  const t = copy[lang] || copy.en;
+
   return (
     <section className="py-16 bg-[#232323] relative overflow-hidden">
       <div className="max-w-screen-xl mx-auto px-6 lg:px-8">
@@ -28,28 +48,28 @@ export const PremiumBanner = () => {
             {/* Title */}
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-[#00c896]">
-                Upgrade to Premium
+                {t.title}
               </span>
             </h2>
 
             {/* Description */}
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Unlock unlimited usage, priority processing, and advanced AI models to maximize productivity.
+              {t.description}
             </p>
 
             {/* Features */}
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <div className="text-center">
                 <div className="text-[#00c896] font-bold text-lg">∞</div>
-                <div className="text-gray-300 text-sm">Unlimited Usage</div>
+                <div className="text-gray-300 text-sm">{t.features[0]}</div>
               </div>
               <div className="text-center">
                 <div className="text-[#00c896] font-bold text-lg">⚡</div>
-                <div className="text-gray-300 text-sm">Priority Processing</div>
+                <div className="text-gray-300 text-sm">{t.features[1]}</div>
               </div>
               <div className="text-center">
                 <div className="text-[#00c896] font-bold text-lg">🤖</div>
-                <div className="text-gray-300 text-sm">Premium AI Models</div>
+                <div className="text-gray-300 text-sm">{t.features[2]}</div>
               </div>
             </div>
 
@@ -58,11 +78,11 @@ export const PremiumBanner = () => {
               size="lg"
               className="bg-gradient-to-r from-purple-500 to-[#00c896] hover:from-purple-600 hover:to-[#00b085] text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 hover:shadow-xl hover:shadow-purple-500/25 hover:scale-105"
             >
-              Upgrade to Premium – $7/mo
+              {t.cta}
             </Button>
 
             <p className="text-gray-400 text-sm mt-4">
-              7-day free trial • Cancel anytime
+              {t.note}
             </p>
           </div>
         </div>

@@ -3,9 +3,52 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '..
 import { Card } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { MessageCircle, Mail, Search, HelpCircle } from 'lucide-react';
-import { faqData } from '../data/mock';
+import { getContent } from '../data/mock';
+import { useLanguage } from '../i18n';
 
 export default function Help() {
+  const { lang } = useLanguage();
+  const { faqData } = getContent(lang);
+  const copy = {
+    en: {
+      title: 'Help Center',
+      subtitle: 'Everything you want to learn about Avenia. Can’t find the answer you’re looking for? Contact our team.',
+      faqTitle: 'Frequently Asked Questions',
+      accountTitle: 'Account & Data Deletion',
+      accountBody: 'You can request deletion of your Avenia account and personal data from this page:',
+      accountLink: 'Click here',
+      contactTitle: 'Still have a question?',
+      contactBody: 'Our team is happy to help. We respond within 24 hours.',
+      liveSupport: 'Live Support',
+      sendEmail: 'Send Email',
+      quickLinksTitle: 'Quick Links',
+      quickLinks: [
+        { title: 'API Documentation', description: 'Technical guide for developers' },
+        { title: 'Video Tutorials', description: 'Step-by-step how-to guides' },
+        { title: 'Community', description: 'Share experiences with other users' },
+      ],
+    },
+    tr: {
+      title: 'Yardım Merkezi',
+      subtitle: 'Avenia hakkında merak ettikleriniz burada. Yanıtı bulamadıysanız ekibimizle iletişime geçin.',
+      faqTitle: 'Sık Sorulan Sorular',
+      accountTitle: 'Hesap ve Veri Silme',
+      accountBody: 'Avenia hesabınızı ve kişisel verilerinizi silme talebini bu sayfadan oluşturabilirsiniz:',
+      accountLink: 'Buraya tıklayın',
+      contactTitle: 'Hâlâ sorunuz mu var?',
+      contactBody: 'Ekibimiz yardımcı olmaktan memnun. 24 saat içinde yanıtlarız.',
+      liveSupport: 'Canlı Destek',
+      sendEmail: 'E-posta Gönder',
+      quickLinksTitle: 'Hızlı Bağlantılar',
+      quickLinks: [
+        { title: 'API Dokümantasyonu', description: 'Geliştiriciler için teknik rehber' },
+        { title: 'Video Eğitimler', description: 'Adım adım kullanım rehberi' },
+        { title: 'Topluluk', description: 'Diğer kullanıcılarla deneyim paylaşın' },
+      ],
+    },
+  };
+  const t = copy[lang] || copy.en;
+
   return (
     <div className="min-h-screen bg-[#232323] pt-20">
       <div className="max-w-4xl mx-auto px-6 lg:px-8 py-16">
@@ -15,17 +58,17 @@ export default function Help() {
             <HelpCircle className="w-8 h-8 text-[#00c896]" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Help <span className="text-[#00c896]">Center</span>
+            {t.title.split(' ')[0]} <span className="text-[#00c896]">{t.title.split(' ').slice(1).join(' ')}</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Everything you want to learn about Avenia. Can't find the answer you're looking for? Contact our team.
+            {t.subtitle}
           </p>
         </div>
 
         {/* FAQ Section */}
         <div className="mb-16">
           <h2 className="text-2xl font-bold text-white mb-8 text-center">
-            Frequently Asked Questions
+            {t.faqTitle}
           </h2>
           
           <Card className="bg-gray-800/30 border-gray-700/50 backdrop-blur-sm">
@@ -46,25 +89,25 @@ export default function Help() {
 
         {/* Contact Section */}
         <Card className="bg-gray-800/30 border-gray-700/50 p-6 mb-12">
-          <h3 className="text-xl font-semibold text-white mb-2">Account & Data Deletion</h3>
+          <h3 className="text-xl font-semibold text-white mb-2">{t.accountTitle}</h3>
           <p className="text-gray-300 mb-4">
-            You can request deletion of your Avenia account and personal data from this page:
+            {t.accountBody}
           </p>
           <a
             href="/account-delete"
             className="inline-flex items-center text-[#00c896] hover:underline font-semibold"
           >
-            Click here
+            {t.accountLink}
           </a>
         </Card>
 
         {/* Contact Section */}
         <Card className="bg-gradient-to-r from-gray-800/40 to-gray-800/60 border-gray-700/50 p-8 text-center">
           <h3 className="text-2xl font-bold text-white mb-4">
-            Still have a question?
+            {t.contactTitle}
           </h3>
           <p className="text-gray-300 mb-6">
-            Our team is happy to help. We respond within 24 hours.
+            {t.contactBody}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -72,7 +115,7 @@ export default function Help() {
               className="bg-[#00c896] hover:bg-[#00b085] text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 hover:shadow-lg hover:shadow-[#00c896]/25"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
-              Live Support
+              {t.liveSupport}
             </Button>
             <Button 
               asChild
@@ -84,7 +127,7 @@ export default function Help() {
                 className="flex items-center"
               >
                 <Mail className="w-5 h-5 mr-2" />
-                Send Email
+                {t.sendEmail}
               </a>
             </Button>
           </div>
@@ -92,28 +135,29 @@ export default function Help() {
 
         {/* Quick Links */}
         <div className="grid md:grid-cols-3 gap-6 mt-12">
+          <h4 className="sr-only">{t.quickLinksTitle}</h4>
           <Card className="bg-gray-800/30 border-gray-700/50 p-6 text-center hover:border-[#00c896]/50 transition-all duration-200 hover:-translate-y-1">
             <div className="w-12 h-12 bg-[#00c896]/20 rounded-xl flex items-center justify-center mx-auto mb-4">
               <Search className="w-6 h-6 text-[#00c896]" />
             </div>
-            <h4 className="text-white font-semibold mb-2">API Documentation</h4>
-            <p className="text-gray-400 text-sm">Technical guide for developers</p>
+            <h4 className="text-white font-semibold mb-2">{t.quickLinks[0].title}</h4>
+            <p className="text-gray-400 text-sm">{t.quickLinks[0].description}</p>
           </Card>
 
           <Card className="bg-gray-800/30 border-gray-700/50 p-6 text-center hover:border-[#00c896]/50 transition-all duration-200 hover:-translate-y-1">
             <div className="w-12 h-12 bg-[#00c896]/20 rounded-xl flex items-center justify-center mx-auto mb-4">
               <MessageCircle className="w-6 h-6 text-[#00c896]" />
             </div>
-            <h4 className="text-white font-semibold mb-2">Video Tutorials</h4>
-            <p className="text-gray-400 text-sm">Step-by-step how-to guides</p>
+            <h4 className="text-white font-semibold mb-2">{t.quickLinks[1].title}</h4>
+            <p className="text-gray-400 text-sm">{t.quickLinks[1].description}</p>
           </Card>
 
           <Card className="bg-gray-800/30 border-gray-700/50 p-6 text-center hover:border-[#00c896]/50 transition-all duration-200 hover:-translate-y-1">
             <div className="w-12 h-12 bg-[#00c896]/20 rounded-xl flex items-center justify-center mx-auto mb-4">
               <HelpCircle className="w-6 h-6 text-[#00c896]" />
             </div>
-            <h4 className="text-white font-semibold mb-2">Community</h4>
-            <p className="text-gray-400 text-sm">Share experiences with other users</p>
+            <h4 className="text-white font-semibold mb-2">{t.quickLinks[2].title}</h4>
+            <p className="text-gray-400 text-sm">{t.quickLinks[2].description}</p>
           </Card>
         </div>
       </div>

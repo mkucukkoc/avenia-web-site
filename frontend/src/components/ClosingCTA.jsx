@@ -1,8 +1,38 @@
 import React from 'react';
 import { Button } from './ui/button';
 import { ArrowRight, Star } from 'lucide-react';
+import { useLanguage } from '../i18n';
 
 export const ClosingCTA = () => {
+  const { lang } = useLanguage();
+  const copy = {
+    en: {
+      titleLine1: 'Unlock the Power of AI',
+      titleLine2: 'Discover It Now',
+      subtitle: 'Thousands of people already boost their productivity with Avenia. Join the transformation today.',
+      cta: 'Get Started Free',
+      stats: [
+        { value: '1000+', label: 'Happy Users' },
+        { value: '4.9/5', label: 'Average Rating' },
+        { value: '50K+', label: 'Tasks Completed' },
+      ],
+      note: 'No credit card required • Get started in 30 seconds',
+    },
+    tr: {
+      titleLine1: 'AI Gücünü Keşfedin',
+      titleLine2: 'Hemen Deneyin',
+      subtitle: 'Binlerce kişi Avenia ile üretkenliğini artırıyor. Bugün sen de katıl.',
+      cta: 'Ücretsiz Başla',
+      stats: [
+        { value: '1000+', label: 'Mutlu Kullanıcı' },
+        { value: '4.9/5', label: 'Ortalama Puan' },
+        { value: '50K+', label: 'Tamamlanan Görev' },
+      ],
+      note: 'Kredi kartı gerekmez • 30 saniyede başlayın',
+    },
+  };
+  const t = copy[lang] || copy.en;
+
   return (
     <section className="py-24 bg-gradient-to-b from-[#232323] to-gray-900 relative overflow-hidden">
       {/* Background Effects */}
@@ -20,16 +50,15 @@ export const ClosingCTA = () => {
 
         {/* Main Content */}
         <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 max-w-4xl mx-auto leading-[1.1]">
-          Unlock the Power of AI
+          {t.titleLine1}
           <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00c896] to-[#00e0a8]">
-            Discover It Now
+            {t.titleLine2}
           </span>
         </h2>
 
         <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
-          Thousands of people already boost their productivity with Avenia. 
-          Join the transformation today.
+          {t.subtitle}
         </p>
 
         {/* CTA Buttons */}
@@ -45,7 +74,7 @@ export const ClosingCTA = () => {
               rel="noopener noreferrer"
               className="flex items-center"
             >
-              Get Started Free
+              {t.cta}
               <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" />
             </a>
           </Button>
@@ -53,23 +82,17 @@ export const ClosingCTA = () => {
 
         {/* Social Proof */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          <div className="text-center">
-            <div className="text-3xl font-bold text-[#00c896] mb-2">1000+</div>
-            <div className="text-gray-400">Happy Users</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-[#00c896] mb-2">4.9/5</div>
-            <div className="text-gray-400">Average Rating</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-[#00c896] mb-2">50K+</div>
-            <div className="text-gray-400">Tasks Completed</div>
-          </div>
+          {t.stats.map((stat) => (
+            <div key={stat.label} className="text-center">
+              <div className="text-3xl font-bold text-[#00c896] mb-2">{stat.value}</div>
+              <div className="text-gray-400">{stat.label}</div>
+            </div>
+          ))}
         </div>
 
         {/* Final Note */}
         <p className="text-gray-500 text-sm mt-12">
-          No credit card required • Get started in 30 seconds
+          {t.note}
         </p>
       </div>
     </section>

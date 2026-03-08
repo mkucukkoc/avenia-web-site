@@ -15,28 +15,31 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Support from "./pages/Support";
 import Status from "./pages/Status";
+import { LanguageProvider } from "./i18n";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/help" element={<Help />} />
-          <Route path="/account-delete" element={<AccountDelete />} />
-          <Route path="/terms" element={<Terms />} />
-          <Route path="/privacy" element={<Privacy />} />
-          <Route path="/product" element={<Product />} />
-          <Route path="/features" element={<Features />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/support" element={<Support />} />
-          <Route path="/status" element={<Status />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+      <LanguageProvider>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/help" element={<Help />} />
+            <Route path="/account-delete" element={<AccountDelete />} />
+            <Route path="/terms" element={<Terms />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/product" element={<Product />} />
+            <Route path="/features" element={<Features />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/support" element={<Support />} />
+            <Route path="/status" element={<Status />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </LanguageProvider>
     </div>
   );
 }

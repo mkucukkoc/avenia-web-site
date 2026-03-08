@@ -1,7 +1,8 @@
 import React from 'react';
 import { Card } from './ui/card';
 import { FileText, Eye, Volume2, Video, MessageSquare } from 'lucide-react';
-import { features } from '../data/mock';
+import { getContent } from '../data/mock';
+import { useLanguage } from '../i18n';
 
 const iconMap = {
   FileText,
@@ -12,16 +13,36 @@ const iconMap = {
 };
 
 export const Features = () => {
+  const { lang } = useLanguage();
+  const { features } = getContent(lang);
+  const copy = {
+    en: {
+      titlePrefix: 'Powerful',
+      titleEmphasis: 'AI Features',
+      subtitle: 'Avenia accelerates your workflow with the latest AI technology.',
+      more: 'And there is more...',
+      shipping: 'We keep shipping new features',
+    },
+    tr: {
+      titlePrefix: 'Güçlü',
+      titleEmphasis: 'AI Özellikleri',
+      subtitle: 'Avenia, en yeni AI teknolojisiyle iş akışınızı hızlandırır.',
+      more: 'Daha fazlası da var...',
+      shipping: 'Yeni özellikler eklemeye devam ediyoruz',
+    },
+  };
+  const t = copy[lang] || copy.en;
+
   return (
     <section className="py-24 bg-[#232323]">
       <div className="max-w-screen-xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Powerful <span className="text-[#00c896]">AI Features</span>
+            {t.titlePrefix} <span className="text-[#00c896]">{t.titleEmphasis}</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Avenia accelerates your workflow with the latest AI technology.
+            {t.subtitle}
           </p>
         </div>
 
@@ -57,9 +78,9 @@ export const Features = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <p className="text-gray-400 mb-4">And there is more...</p>
+          <p className="text-gray-400 mb-4">{t.more}</p>
           <div className="inline-flex items-center px-6 py-3 rounded-full bg-[#00c896]/10 border border-[#00c896]/30">
-            <span className="text-[#00c896] font-medium">We keep shipping new features</span>
+            <span className="text-[#00c896] font-medium">{t.shipping}</span>
           </div>
         </div>
       </div>

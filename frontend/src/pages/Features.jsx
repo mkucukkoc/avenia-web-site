@@ -1,7 +1,8 @@
 import React from 'react';
 import { Card } from '../components/ui/card';
 import { FileText, Eye, Globe, MessageSquare, Shield, Zap } from 'lucide-react';
-import { detailedFeatures } from '../data/mock';
+import { getContent } from '../data/mock';
+import { useLanguage } from '../i18n';
 
 const iconMap = {
   FileText,
@@ -13,21 +14,68 @@ const iconMap = {
 };
 
 export default function Features() {
+  const { lang } = useLanguage();
+  const { detailedFeatures } = getContent(lang);
+
+  const copy = {
+    en: {
+      badge: '⚡ Features',
+      titlePrefix: 'Detailed',
+      titleEmphasis: 'Feature List',
+      subtitle: 'Explore every AI-powered capability Avenia offers. Each feature is designed to accelerate your workflow.',
+      securityTitle: 'Security & Infrastructure',
+      performanceTitle: 'Performance & Limits',
+      securityItems: [
+        'Secure Firebase Storage: Your data is stored in an encrypted environment.',
+        '256-bit SSL Encryption: Every data transfer stays protected.',
+        'GDPR & KVKK Compliance: Privacy is treated as a first-class priority.',
+        '99.9% Uptime: Guaranteed continuity of service.'
+      ],
+      performanceItems: [
+        'Lightning-Fast Processing: Average response times of 2–5 seconds.',
+        'File Size: 10 MB on Free, 100 MB on Premium.',
+        'Language Support: TTS/STT in 50+ languages.',
+        'Format Support: PDF, Word, PPT, JPG, PNG, MP4.'
+      ]
+    },
+    tr: {
+      badge: '⚡ Özellikler',
+      titlePrefix: 'Detaylı',
+      titleEmphasis: 'Özellik Listesi',
+      subtitle: 'Avenia’nın sunduğu tüm AI özelliklerini keşfedin. Her özellik iş akışınızı hızlandırmak için tasarlandı.',
+      securityTitle: 'Güvenlik ve Altyapı',
+      performanceTitle: 'Performans ve Limitler',
+      securityItems: [
+        'Güvenli Firebase Depolama: Verileriniz şifreli ortamda tutulur.',
+        '256-bit SSL Şifreleme: Tüm veri transferleri korunur.',
+        'GDPR & KVKK Uyumu: Gizlilik önceliklidir.',
+        '99.9% Çalışma Süresi: Hizmet sürekliliği.'
+      ],
+      performanceItems: [
+        'Hızlı İşleme: Ortalama yanıt süresi 2–5 saniye.',
+        'Dosya Boyutu: Ücretsiz 10 MB, Premium 100 MB.',
+        'Dil Desteği: TTS/STT 50+ dil.',
+        'Format Desteği: PDF, Word, PPT, JPG, PNG, MP4.'
+      ]
+    }
+  };
+
+  const t = copy[lang] || copy.en;
+
   return (
     <div className="min-h-screen bg-[#232323] pt-20">
       <div className="max-w-screen-xl mx-auto px-6 lg:px-8 py-16">
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-[#00c896]/20 border border-[#00c896]/30 mb-8">
-            <span className="text-[#00c896] text-sm font-medium">⚡ Features</span>
+            <span className="text-[#00c896] text-sm font-medium">{t.badge}</span>
           </div>
           
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Detailed <span className="text-[#00c896]">Feature List</span>
+            {t.titlePrefix} <span className="text-[#00c896]">{t.titleEmphasis}</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Explore every AI-powered capability Avenia offers.
-            Each feature is designed to accelerate your workflow.
+            {t.subtitle}
           </p>
         </div>
 
@@ -71,55 +119,33 @@ export default function Features() {
           <Card className="bg-gray-800/30 border-gray-700/50 p-8">
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
               <Shield className="w-6 h-6 text-[#00c896] mr-3" />
-              Security & Infrastructure
+              {t.securityTitle}
             </h3>
             <ul className="space-y-4 text-gray-300">
-              <li className="flex items-start">
-                <div className="w-2 h-2 bg-[#00c896] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span><strong>Secure Firebase Storage:</strong> Your data is stored in an encrypted environment.</span>
-              </li>
-              <li className="flex items-start">
-                <div className="w-2 h-2 bg-[#00c896] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span><strong>256-bit SSL Encryption:</strong> Every data transfer stays protected.</span>
-              </li>
-              <li className="flex items-start">
-                <div className="w-2 h-2 bg-[#00c896] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span><strong>GDPR & KVKK Compliance:</strong> Privacy is treated as a first-class priority.</span>
-              </li>
-              <li className="flex items-start">
-                <div className="w-2 h-2 bg-[#00c896] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span><strong>99.9% Uptime:</strong> Guaranteed continuity of service.</span>
-              </li>
+              {t.securityItems.map((item) => (
+                <li key={item} className="flex items-start">
+                  <div className="w-2 h-2 bg-[#00c896] rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  <span>{item}</span>
+                </li>
+              ))}
             </ul>
           </Card>
 
           <Card className="bg-gray-800/30 border-gray-700/50 p-8">
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
               <Zap className="w-6 h-6 text-[#00c896] mr-3" />
-              Performance & Limits
+              {t.performanceTitle}
             </h3>
             <ul className="space-y-4 text-gray-300">
-              <li className="flex items-start">
-                <div className="w-2 h-2 bg-[#00c896] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span><strong>Lightning-Fast Processing:</strong> Average response times of 2–5 seconds.</span>
-              </li>
-              <li className="flex items-start">
-                <div className="w-2 h-2 bg-[#00c896] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span><strong>File Size:</strong> 10 MB on Free, 100 MB on Premium.</span>
-              </li>
-              <li className="flex items-start">
-                <div className="w-2 h-2 bg-[#00c896] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span><strong>Language Support:</strong> TTS/STT in 50+ languages.</span>
-              </li>
-              <li className="flex items-start">
-                <div className="w-2 h-2 bg-[#00c896] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span><strong>Format Support:</strong> PDF, Word, PPT, JPG, PNG, MP4.</span>
-              </li>
+              {t.performanceItems.map((item) => (
+                <li key={item} className="flex items-start">
+                  <div className="w-2 h-2 bg-[#00c896] rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  <span>{item}</span>
+                </li>
+              ))}
             </ul>
           </Card>
         </div>
-
-     
       </div>
     </div>
   );

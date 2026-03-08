@@ -2,10 +2,15 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from './ui/button';
 import { Menu, X } from 'lucide-react';
-import { navLinks } from '../data/mock';
+import { getContent } from '../data/mock';
+import { useLanguage } from '../i18n';
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { lang, setLang } = useLanguage();
+  const { navLinks } = getContent(lang);
+  const isTr = lang === 'tr';
+  const ctaLabel = isTr ? 'Ücretsiz Dene' : 'Try for Free';
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-[#232323]/95 backdrop-blur-md border-b border-white/10">
@@ -27,6 +32,20 @@ export const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
+            <div className="flex items-center bg-gray-800/60 border border-gray-700/70 rounded-full p-1">
+              <button
+                onClick={() => setLang('tr')}
+                className={`px-3 py-1 text-xs font-semibold rounded-full transition-colors ${isTr ? 'bg-[#00c896] text-white' : 'text-gray-300 hover:text-white'}`}
+              >
+                TR
+              </button>
+              <button
+                onClick={() => setLang('en')}
+                className={`px-3 py-1 text-xs font-semibold rounded-full transition-colors ${!isTr ? 'bg-[#00c896] text-white' : 'text-gray-300 hover:text-white'}`}
+              >
+                EN
+              </button>
+            </div>
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -46,7 +65,7 @@ export const Navbar = () => {
                 rel="noopener noreferrer"
                 className="flex items-center"
               >
-                Try for Free
+                {ctaLabel}
               </a>
             </Button>
           </div>
@@ -64,6 +83,20 @@ export const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden absolute top-16 left-0 right-0 bg-[#232323]/95 backdrop-blur-md border-b border-white/10">
             <div className="px-6 py-4 space-y-4">
+              <div className="flex items-center bg-gray-800/60 border border-gray-700/70 rounded-full p-1 w-fit">
+                <button
+                  onClick={() => setLang('tr')}
+                  className={`px-3 py-1 text-xs font-semibold rounded-full transition-colors ${isTr ? 'bg-[#00c896] text-white' : 'text-gray-300 hover:text-white'}`}
+                >
+                  TR
+                </button>
+                <button
+                  onClick={() => setLang('en')}
+                  className={`px-3 py-1 text-xs font-semibold rounded-full transition-colors ${!isTr ? 'bg-[#00c896] text-white' : 'text-gray-300 hover:text-white'}`}
+                >
+                  EN
+                </button>
+              </div>
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
@@ -85,7 +118,7 @@ export const Navbar = () => {
                   rel="noopener noreferrer"
                   className="flex items-center justify-center"
                 >
-                  Try for Free
+                  {ctaLabel}
                 </a>
               </Button>
             </div>

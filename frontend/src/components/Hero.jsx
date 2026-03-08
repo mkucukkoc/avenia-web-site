@@ -1,8 +1,40 @@
 import React from 'react';
 import { Button } from './ui/button';
 import { ArrowRight, Play } from 'lucide-react';
+import { useLanguage } from '../i18n';
 
 export const Hero = () => {
+  const { lang } = useLanguage();
+  const copy = {
+    en: {
+      badge: '🚀 AI-Powered Platform',
+      titleLine1: 'Your AI Assistant',
+      subtitle: 'Summarize documents, analyze visuals, and convert between speech and text.',
+      subtitleLine2: 'One platform for every AI workflow.',
+      ctaPrimary: 'Start for Free',
+      ctaSecondary: 'Watch Demo',
+      stats: [
+        { value: '1000+', label: 'Active Users' },
+        { value: '50K+', label: 'Files Processed' },
+        { value: '99.9%', label: 'Uptime' },
+      ],
+    },
+    tr: {
+      badge: '🚀 Yapay Zeka Destekli Platform',
+      titleLine1: 'AI Asistanınız',
+      subtitle: 'Belgeleri özetleyin, görselleri analiz edin, ses ve metin arasında dönüşüm yapın.',
+      subtitleLine2: 'Tüm AI iş akışları için tek platform.',
+      ctaPrimary: 'Ücretsiz Başla',
+      ctaSecondary: 'Demoyu İzle',
+      stats: [
+        { value: '1000+', label: 'Aktif Kullanıcı' },
+        { value: '50K+', label: 'İşlenen Dosya' },
+        { value: '99.9%', label: 'Çalışma Süresi' },
+      ],
+    },
+  };
+  const t = copy[lang] || copy.en;
+
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-[#232323] overflow-hidden">
       {/* Background Effects */}
@@ -16,13 +48,13 @@ export const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-[#00c896]/20 border border-[#00c896]/30 mb-8">
-            <span className="text-[#00c896] text-sm font-medium">🚀 AI-Powered Platform</span>
+            <span className="text-[#00c896] text-sm font-medium">{t.badge}</span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-[1.1]">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300">
-              Your AI Assistant
+              {t.titleLine1}
             </span>
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00c896] to-[#00e0a8]">
@@ -32,9 +64,9 @@ export const Hero = () => {
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Summarize documents, analyze visuals, and convert between speech and text. 
+            {t.subtitle}
             <br className="hidden md:block" />
-            One platform for every AI workflow.
+            {t.subtitleLine2}
           </p>
 
           {/* CTA Buttons */}
@@ -50,7 +82,7 @@ export const Hero = () => {
                 rel="noopener noreferrer"
                 className="flex items-center"
               >
-                Start for Free
+                {t.ctaPrimary}
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
@@ -61,24 +93,18 @@ export const Hero = () => {
               className="border-2 border-white/20 text-white hover:bg-white/10 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 hover:border-[#00c896] group"
             >
               <Play className="mr-2 w-5 h-5" />
-              Watch Demo
+              {t.ctaSecondary}
             </Button>
           </div>
 
           {/* Stats */}
           <div className="flex flex-wrap justify-center gap-8 mt-16 pt-8 border-t border-white/10">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-[#00c896]">1000+</div>
-              <div className="text-gray-400 text-sm">Active Users</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-[#00c896]">50K+</div>
-              <div className="text-gray-400 text-sm">Files Processed</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-[#00c896]">99.9%</div>
-              <div className="text-gray-400 text-sm">Uptime</div>
-            </div>
+            {t.stats.map((stat) => (
+              <div key={stat.label} className="text-center">
+                <div className="text-2xl font-bold text-[#00c896]">{stat.value}</div>
+                <div className="text-gray-400 text-sm">{stat.label}</div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

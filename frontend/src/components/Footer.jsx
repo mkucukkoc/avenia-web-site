@@ -1,9 +1,34 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { footerLinks } from '../data/mock';
+import { getContent } from '../data/mock';
 import { Twitter, Github, Linkedin, Mail } from 'lucide-react';
+import { useLanguage } from '../i18n';
 
 export const Footer = () => {
+  const { lang } = useLanguage();
+  const { footerLinks } = getContent(lang);
+  const copy = {
+    en: {
+      description: 'AI-powered multi-purpose assistant platform. Summarize documents, analyze visuals, and unlock the full power of AI.',
+      headings: {
+        product: 'Product',
+        company: 'Company',
+        support: 'Support',
+      },
+      rights: '© 2026 Avenia. All rights reserved.',
+    },
+    tr: {
+      description: 'Yapay zeka destekli çok amaçlı asistan platformu. Belgeleri özetleyin, görselleri analiz edin ve AI gücünü açığa çıkarın.',
+      headings: {
+        product: 'Ürün',
+        company: 'Şirket',
+        support: 'Destek',
+      },
+      rights: '© 2026 Avenia. Tüm hakları saklıdır.',
+    },
+  };
+  const t = copy[lang] || copy.en;
+
   return (
     <footer className="bg-gray-900 border-t border-gray-800">
       <div className="max-w-screen-xl mx-auto px-6 lg:px-8 py-16">
@@ -20,8 +45,7 @@ export const Footer = () => {
               <span className="text-2xl font-bold text-white">Avenia</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
-              AI-powered multi-purpose assistant platform.
-              Summarize documents, analyze visuals, and unlock the full power of AI.
+              {t.description}
             </p>
 
             {/* Social Links */}
@@ -41,7 +65,7 @@ export const Footer = () => {
 
           {/* Product Links */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Product</h3>
+            <h3 className="text-white font-semibold mb-4">{t.headings.product}</h3>
             <ul className="space-y-3">
               {footerLinks.product.map((link) => (
                 <li key={link.href}>
@@ -56,7 +80,7 @@ export const Footer = () => {
 
           {/* Company Links */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Company</h3>
+            <h3 className="text-white font-semibold mb-4">{t.headings.company}</h3>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.href}>
@@ -71,7 +95,7 @@ export const Footer = () => {
 
           {/* Support Links */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Support</h3>
+            <h3 className="text-white font-semibold mb-4">{t.headings.support}</h3>
             <ul className="space-y-3">
               {footerLinks.support.map((link) => (
                 <li key={link.href}>
@@ -88,7 +112,7 @@ export const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2024 Avenia. All rights reserved.
+              {t.rights}
             </div>
             <div className="flex space-x-6">
               {footerLinks.legal.map((link) => (

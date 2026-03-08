@@ -1,6 +1,7 @@
 import React from 'react';
 import { Shield, Zap, Globe, Users } from 'lucide-react';
-import { trustBadges } from '../data/mock';
+import { getContent } from '../data/mock';
+import { useLanguage } from '../i18n';
 
 const iconMap = {
   Shield,
@@ -10,13 +11,31 @@ const iconMap = {
 };
 
 export const TrustBadges = () => {
+  const { lang } = useLanguage();
+  const { trustBadges } = getContent(lang);
+  const copy = {
+    en: {
+      titlePrefix: 'Why',
+      titleEmphasis: 'Avenia?',
+      status: 'System Online',
+      compliance: ['SOC 2 Compliant', 'GDPR Compliant', '256-bit SSL Encryption'],
+    },
+    tr: {
+      titlePrefix: 'Neden',
+      titleEmphasis: 'Avenia?',
+      status: 'Sistem Online',
+      compliance: ['SOC 2 Uyumlu', 'KVKK/GDPR Uyumlu', '256-bit SSL Şifreleme'],
+    },
+  };
+  const t = copy[lang] || copy.en;
+
   return (
     <section className="py-16 bg-[#232323]">
       <div className="max-w-screen-xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-            Why <span className="text-[#00c896]">Avenia?</span>
+            {t.titlePrefix} <span className="text-[#00c896]">{t.titleEmphasis}</span>
           </h2>
         </div>
 
@@ -45,17 +64,13 @@ export const TrustBadges = () => {
         <div className="flex flex-wrap justify-center items-center gap-8 mt-16 pt-8 border-t border-gray-700/50">
           <div className="flex items-center space-x-2 text-gray-400">
             <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-            <span className="text-sm">System Online</span>
+            <span className="text-sm">{t.status}</span>
           </div>
-          <div className="text-gray-400 text-sm">
-            SOC 2 Compliant
-          </div>
-          <div className="text-gray-400 text-sm">
-            GDPR Compliant
-          </div>
-          <div className="text-gray-400 text-sm">
-            256-bit SSL Encryption
-          </div>
+          {t.compliance.map((item) => (
+            <div key={item} className="text-gray-400 text-sm">
+              {item}
+            </div>
+          ))}
         </div>
       </div>
     </section>

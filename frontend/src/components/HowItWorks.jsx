@@ -1,6 +1,7 @@
 import React from 'react';
 import { Upload, MessageCircle, CheckCircle } from 'lucide-react';
-import { howItWorks } from '../data/mock';
+import { getContent } from '../data/mock';
+import { useLanguage } from '../i18n';
 
 const iconMap = {
   Upload,
@@ -9,16 +10,34 @@ const iconMap = {
 };
 
 export const HowItWorks = () => {
+  const { lang } = useLanguage();
+  const { howItWorks } = getContent(lang);
+  const copy = {
+    en: {
+      titlePrefix: 'How It',
+      titleEmphasis: 'Works',
+      subtitle: 'Start harnessing AI in just three simple steps.',
+      note: '⚡ Average processing time: 2-5 seconds',
+    },
+    tr: {
+      titlePrefix: 'Nasıl',
+      titleEmphasis: 'Çalışır',
+      subtitle: 'AI gücünü sadece üç basit adımda kullanmaya başlayın.',
+      note: '⚡ Ortalama işlem süresi: 2-5 saniye',
+    },
+  };
+  const t = copy[lang] || copy.en;
+
   return (
     <section className="py-24 bg-gray-900/50">
       <div className="max-w-screen-xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            How It <span className="text-[#00c896]">Works</span>
+            {t.titlePrefix} <span className="text-[#00c896]">{t.titleEmphasis}</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Start harnessing AI in just three simple steps.
+            {t.subtitle}
           </p>
         </div>
 
@@ -59,7 +78,7 @@ export const HowItWorks = () => {
         {/* Bottom Note */}
         <div className="text-center mt-16">
           <div className="inline-flex items-center px-6 py-3 rounded-full bg-[#00c896]/10 border border-[#00c896]/30">
-            <span className="text-[#00c896] font-medium">⚡ Average processing time: 2-5 seconds</span>
+            <span className="text-[#00c896] font-medium">{t.note}</span>
           </div>
         </div>
       </div>
