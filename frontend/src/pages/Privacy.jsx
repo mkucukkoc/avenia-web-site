@@ -8,194 +8,270 @@ export default function Privacy() {
 
   const content = {
     en: {
-      title: 'Privacy Policy',
-      subtitle: 'Detailed information on how we collect, process, and protect your personal data.',
+      title: 'Avenia Privacy Policy',
+      subtitle: 'Explains how personal data is collected, used, and processed when using the Avenia app.',
       updated: 'March 08, 2026',
       sections: [
         {
           title: '1. Introduction',
           paragraphs: [
-            'At Avenia we take the security and privacy of your personal data seriously. This policy explains how we process your information while delivering our services.',
-            'We operate in compliance with GDPR and KVKK regulations.'
+            'At Avenia, we take our users\' privacy seriously. This Privacy Policy explains how personal data is collected, used, and processed when using the Avenia app.',
+            'Avenia is a service available worldwide and aims to comply with applicable data protection regulations. Examples include:',
+            'By using the app, you accept this Privacy Policy.'
           ],
+          list: ['GDPR (European Union)', 'KVKK (Turkey)'],
         },
         {
           title: '2. Data We Collect',
-          paragraphs: ['We collect the following categories of data to provide the service:'],
+          paragraphs: ['The following categories of data may be collected to provide the service:'],
           list: [
-            'Account information (email, name, login identifiers).',
-            'Usage data (feature usage and interaction logs).',
-            'Uploaded content (text, files, images, audio/video).',
-            'Technical data (IP address, device, browser/app details).',
-            'Payment information processed by third‑party billing providers.'
+            'Account Information: email address, username, login authentication information.',
+            'Usage Data: in-app interactions, features used, usage statistics.',
+            'Uploaded Content: text, documents, images, audio or video files.',
+            'Technical Data: IP address, device information, operating system, app version.',
+            'Payment Information: Payments are processed by app stores (Google Play, Apple App Store). Avenia does not store payment card details.'
           ],
         },
         {
           title: '3. How We Use Data',
-          paragraphs: ['We process your data for the following purposes:'],
+          paragraphs: ['Collected data may be used for the following purposes:'],
           list: [
-            'Delivering and improving AI services.',
-            'Managing and securing your account.',
-            'Providing customer support.',
-            'Improving quality and resolving issues.',
-            'Complying with legal obligations.'
+            'providing AI services',
+            'creating or analyzing content',
+            'managing user accounts',
+            'ensuring security',
+            'improving service performance',
+            'resolving technical issues',
+            'complying with legal obligations'
           ],
         },
         {
-          title: '4. AI Processing & Third‑Party Providers',
+          title: '4. AI Processing and Third-Party Providers',
           paragraphs: [
-            'Avenia may use third‑party AI providers to process your requests. For example, chat/document processing may use Google Gemini, and image/video generation may use fal.ai and/or Gemini.',
-            'We only send the data required to deliver the requested output. These providers process data on our behalf according to their own policies.'
+            'Avenia may use third-party service providers to offer some features.',
+            'Content submitted by the user may be processed by these services.',
+            'These service providers may process data in accordance with their own privacy policies.',
+            'Avenia is not directly responsible for the data processing activities of third-party services.'
           ],
+          list: ['Google Gemini', 'fal.ai', 'cloud infrastructure providers', 'data storage services'],
         },
         {
-          title: '5. Data Storage & Retention',
+          title: '5. Storage and Retention',
           paragraphs: [
-            'Files are stored in Firebase to deliver the service. Temporary processing files are deleted after processing where possible.',
-            'Saved outputs remain available in your account until you delete them or delete your account.',
-            'Account deletion requests are completed within 30 days unless legal retention is required.'
+            'Data may be stored on the following infrastructure:',
+            'Data is retained for as long as necessary to operate the service.',
+            'Temporary processing data is deleted where possible after processing is completed.',
+            'Account deletion requests are processed within 30 days, except where legal retention obligations apply.'
           ],
+          list: ['Firebase', 'cloud storage services'],
         },
         {
           title: '6. Data Sharing',
-          paragraphs: ['We share your data only when:'],
+          paragraphs: ['Data may be shared in the following cases:'],
           list: [
-            'We must comply with legal obligations or lawful requests.',
-            'Trusted service providers support our operations (such as cloud or billing providers).',
-            'You provide explicit consent.'
+            'with technology providers required to deliver the service',
+            'when legally required',
+            'upon requests from official authorities',
+            'when the user gives explicit consent'
           ],
-          highlight: 'We never sell your data to third parties.'
+          highlight: 'Avenia does not sell user data for commercial purposes.',
         },
         {
-          title: '7. Your Rights',
-          paragraphs: ['Under GDPR and KVKK you have the right to:'],
+          title: '7. User Content and Responsibility',
+          paragraphs: [
+            'Users are responsible for the content they upload or create in the app.',
+            'The user represents that they have the necessary rights or permissions for the content they upload.',
+            'Avenia is not obligated to verify the accuracy or legal status of user-provided content.'
+          ],
+        },
+        {
+          title: '8. International Data Transfer',
+          paragraphs: [
+            'Avenia is a service accessible worldwide.',
+            'Therefore, data may be processed or stored in the following countries:',
+            'By using the app, you consent to your data being transferred to these countries.'
+          ],
+          list: ['European Union', 'United States', 'other countries with data centers'],
+        },
+        {
+          title: '9. Cookies',
+          paragraphs: [
+            'Avenia web services and related platforms may use cookies.',
+            'Cookies may be used for the following purposes:'
+          ],
           list: [
-            'Access the personal data we hold about you.',
-            'Request corrections to inaccurate data.',
-            'Request deletion of your data.',
-            'Request data portability.',
-            'Object to data processing in certain circumstances.'
+            'improving user experience',
+            'providing technical functions',
+            'performing performance analytics'
           ],
         },
         {
-          title: '8. Cookies',
+          title: '10. Your Rights',
           paragraphs: [
-            'We use cookies to improve the user experience on our platform. You can manage cookie preferences through your browser settings.',
-            'Essential cookies are required for the platform to function properly.'
+            'Depending on your country, you may have the following rights:',
+            'You can contact us to exercise your rights.'
+          ],
+          list: [
+            'access your data',
+            'correct inaccurate data',
+            'request deletion of data',
+            'request data portability',
+            'object to data processing'
           ],
         },
         {
-          title: '9. Changes',
+          title: '11. Changes',
           paragraphs: [
-            'This privacy policy may be updated from time to time. We will notify you by email about significant changes.',
-            'Updates take effect on the date they are posted here.'
+            'This Privacy Policy may be updated from time to time.',
+            'The updated version takes effect on the date it is published.'
           ],
         },
         {
-          title: '10. Contact',
+          title: '12. Contact',
           paragraphs: [
-            'For any privacy-related questions:',
-            'Email: support@aveniaichat.com',
-            'Address: Maslak District, Teknoloji Campus, Istanbul, Turkey'
+            'For privacy-related questions:',
+            'support@aveniaichat.com'
           ],
+        },
+        {
+          title: 'Developer and Contact',
+          paragraphs: ['Developer: Mustafa Kucukkoc', 'Contact: support@aveniaichat.com'],
         },
       ],
-      footerNote: '🔒 Your privacy is our priority. Reach out anytime if you have questions.'
+      footerNote: 'At Avenia, we take our users\' privacy seriously.'
     },
     tr: {
-      title: 'Gizlilik Politikası',
-      subtitle: 'Kişisel verilerinizi nasıl topladığımızı, işlediğimizi ve koruduğumuzu açıklarız.',
+      title: 'Avenia Gizlilik Politikası',
+      subtitle: 'Avenia uygulamasını kullanırken kişisel verilerin nasıl toplandığını, kullanıldığını ve işlendiğini açıklar.',
       updated: '08 Mart 2026',
       sections: [
         {
           title: '1. Giriş',
           paragraphs: [
-            'Avenia olarak kişisel verilerinizin güvenliğine ve gizliliğine önem veririz. Bu politika, hizmetlerimizi sunarken verilerinizi nasıl işlediğimizi açıklar.',
-            'GDPR ve KVKK düzenlemelerine uyum sağlarız.'
+            'Avenia olarak kullanıcılarımızın gizliliğini ciddiye alıyoruz. Bu Gizlilik Politikası, Avenia uygulamasını kullanırken kişisel verilerin nasıl toplandığını, kullanıldığını ve işlendiğini açıklar.',
+            'Avenia dünya genelinde kullanılabilen bir hizmettir ve ilgili veri koruma düzenlemelerine uymayı hedefler. Buna örnek olarak:',
+            'Uygulamayı kullanarak bu Gizlilik Politikasını kabul etmiş olursunuz.'
           ],
+          list: ['GDPR (Avrupa Birliği)', 'KVKK (Türkiye)'],
         },
         {
           title: '2. Topladığımız Veriler',
-          paragraphs: ['Hizmeti sunmak için şu veri kategorilerini toplarız:'],
+          paragraphs: ['Hizmeti sağlamak amacıyla aşağıdaki veri kategorileri toplanabilir:'],
           list: [
-            'Hesap bilgileri (e-posta, isim, giriş tanımlayıcıları).',
-            'Kullanım verileri (özellik kullanımı ve etkileşim kayıtları).',
-            'Yüklenen içerik (metin, dosya, görsel, ses/video).',
-            'Teknik veriler (IP adresi, cihaz, tarayıcı/uygulama bilgileri).',
-            'Üçüncü taraf ödeme sağlayıcıları tarafından işlenen ödeme bilgileri.'
+            'Hesap Bilgileri: e-posta adresi, kullanıcı adı, giriş kimlik doğrulama bilgileri.',
+            'Kullanım Verileri: uygulama içi etkileşimler, kullanılan özellikler, kullanım istatistikleri.',
+            'Yüklenen İçerikler: metin, belgeler, görseller, ses veya video dosyaları.',
+            'Teknik Veriler: IP adresi, cihaz bilgileri, işletim sistemi, uygulama versiyonu.',
+            'Ödeme Bilgileri: Ödemeler uygulama mağazaları tarafından işlenir (Google Play, Apple App Store). Avenia ödeme kartı bilgilerini saklamaz.'
           ],
         },
         {
           title: '3. Verileri Nasıl Kullanırız',
-          paragraphs: ['Verilerinizi şu amaçlarla işleriz:'],
+          paragraphs: ['Toplanan veriler aşağıdaki amaçlarla kullanılabilir:'],
           list: [
-            'AI hizmetlerini sunmak ve geliştirmek.',
-            'Hesabınızı yönetmek ve güvenliğini sağlamak.',
-            'Müşteri desteği vermek.',
-            'Kaliteyi artırmak ve sorunları çözmek.',
-            'Yasal yükümlülüklere uymak.'
+            'AI hizmetlerini sağlamak',
+            'içerik üretmek veya analiz etmek',
+            'kullanıcı hesaplarını yönetmek',
+            'güvenliği sağlamak',
+            'hizmet performansını geliştirmek',
+            'teknik sorunları çözmek',
+            'yasal yükümlülüklere uymak'
           ],
         },
         {
           title: '4. AI İşleme ve Üçüncü Taraf Sağlayıcılar',
           paragraphs: [
-            'Avenia, taleplerinizi işlemek için üçüncü taraf AI sağlayıcıları kullanabilir. Örneğin sohbet/belge işleme Google Gemini, görsel/video üretimi fal.ai ve/veya Gemini tarafından yapılabilir.',
-            'Yalnızca istenen çıktıyı üretmek için gerekli veriler gönderilir. Bu sağlayıcılar veriyi kendi politikalarına göre işler.'
+            'Avenia bazı özellikleri sunmak için üçüncü taraf servis sağlayıcıları kullanabilir.',
+            'Kullanıcı tarafından gönderilen içerikler bu servisler tarafından işlenebilir.',
+            'Bu servis sağlayıcılar verileri kendi gizlilik politikaları doğrultusunda işleyebilir.',
+            'Avenia, üçüncü taraf servislerin veri işleme faaliyetlerinden doğrudan sorumlu değildir.'
           ],
+          list: ['Google Gemini', 'fal.ai', 'bulut altyapı sağlayıcıları', 'veri depolama hizmetleri'],
         },
         {
           title: '5. Depolama ve Saklama',
           paragraphs: [
-            'Dosyalar hizmeti sunmak için Firebase üzerinde saklanır. Geçici işlem dosyaları mümkün olduğunda işlem sonrası silinir.',
-            'Kaydedilmiş çıktılar siz silene veya hesabınızı kapatana kadar hesabınızda tutulur.',
-            'Hesap silme talepleri, yasal saklama zorunlulukları dışında 30 gün içinde tamamlanır.'
+            'Veriler aşağıdaki altyapılar üzerinde saklanabilir:',
+            'Veriler hizmetin çalışması için gerekli süre boyunca tutulur.',
+            'Geçici işlem verileri mümkün olduğunda işlem tamamlandıktan sonra silinir.',
+            'Hesap silme talepleri, yasal saklama yükümlülükleri hariç olmak üzere 30 gün içinde işlenir.'
           ],
+          list: ['Firebase', 'bulut depolama servisleri'],
         },
         {
           title: '6. Veri Paylaşımı',
-          paragraphs: ['Verilerinizi yalnızca şu durumlarda paylaşırız:'],
+          paragraphs: ['Veriler aşağıdaki durumlarda paylaşılabilir:'],
           list: [
-            'Yasal yükümlülükler veya resmi talepler söz konusuysa.',
-            'Hizmeti sunmak için güvenilir sağlayıcılarla (bulut/ödeme vb.).',
-            'Açık rızanız varsa.'
+            'hizmeti sağlamak için gerekli teknoloji sağlayıcıları ile',
+            'yasal zorunluluk durumunda',
+            'resmi kurum talepleri halinde',
+            'kullanıcı açık rıza verdiğinde'
           ],
-          highlight: 'Verilerinizi üçüncü taraflara satmayız.'
+          highlight: 'Avenia kullanıcı verilerini ticari amaçlarla satmaz.',
         },
         {
-          title: '7. Haklarınız',
-          paragraphs: ['GDPR ve KVKK kapsamında şu haklara sahipsiniz:'],
+          title: '7. Kullanıcı İçeriği ve Sorumluluk',
+          paragraphs: [
+            'Kullanıcılar uygulamaya yükledikleri veya oluşturdukları içeriklerden kendileri sorumludur.',
+            'Kullanıcı, yüklediği içerik üzerinde gerekli haklara sahip olduğunu veya gerekli izinleri aldığını beyan eder.',
+            'Avenia, kullanıcı tarafından sağlanan içeriklerin doğruluğunu veya yasal durumunu doğrulamakla yükümlü değildir.'
+          ],
+        },
+        {
+          title: '8. Uluslararası Veri Transferi',
+          paragraphs: [
+            'Avenia dünya genelinde erişilebilen bir hizmettir.',
+            'Bu nedenle veriler aşağıdaki ülkelerde işlenebilir veya saklanabilir:',
+            'Uygulamayı kullanarak verilerinizin bu ülkelere aktarılabileceğini kabul etmiş olursunuz.'
+          ],
+          list: ['Avrupa Birliği', 'Amerika Birleşik Devletleri', 'diğer veri merkezleri bulunan ülkeler'],
+        },
+        {
+          title: '9. Çerezler',
+          paragraphs: [
+            'Avenia web hizmetleri ve bağlantılı platformlar çerezler kullanabilir.',
+            'Çerezler aşağıdaki amaçlarla kullanılabilir:'
+          ],
           list: [
-            'Kişisel verilerinize erişme.',
-            'Hatalı verilerin düzeltilmesini isteme.',
-            'Veri silme talep etme.',
-            'Veri taşınabilirliği talep etme.',
-            'Belirli durumlarda işlemeye itiraz etme.'
+            'kullanıcı deneyimini geliştirmek',
+            'teknik işlevleri sağlamak',
+            'performans analizi yapmak'
           ],
         },
         {
-          title: '8. Çerezler',
+          title: '10. Haklarınız',
           paragraphs: [
-            'Platform deneyimini iyileştirmek için çerezler kullanırız. Çerez tercihlerini tarayıcınızdan yönetebilirsiniz.',
-            'Temel çerezler platformun çalışması için gereklidir.'
+            'Bulunduğunuz ülkeye bağlı olarak aşağıdaki haklara sahip olabilirsiniz:',
+            'Hak talepleri için bizimle iletişime geçebilirsiniz.'
+          ],
+          list: [
+            'verilerinize erişme',
+            'yanlış verileri düzeltme',
+            'verilerin silinmesini isteme',
+            'veri taşınabilirliği talep etme',
+            'veri işlenmesine itiraz etme'
           ],
         },
         {
-          title: '9. Değişiklikler',
+          title: '11. Değişiklikler',
           paragraphs: [
-            'Bu politika zaman zaman güncellenebilir. Önemli değişikliklerde e-posta ile bilgilendiririz.',
-            'Güncellemeler burada yayımlandığı tarihte yürürlüğe girer.'
+            'Bu Gizlilik Politikası zaman zaman güncellenebilir.',
+            'Güncellenmiş versiyon yayınlandığı tarihte yürürlüğe girer.'
           ],
         },
         {
-          title: '10. İletişim',
+          title: '12. İletişim',
           paragraphs: [
             'Gizlilikle ilgili sorularınız için:',
-            'E-posta: support@aveniaichat.com',
-            'Adres: Maslak, Teknoloji Kampüsü, İstanbul, Türkiye'
+            'support@aveniaichat.com'
           ],
         },
+        {
+          title: 'Geliştirici ve İletişim',
+          paragraphs: ['Geliştirici: Mustafa Kucukkoc', 'İletişim: support@aveniaichat.com'],
+        },
       ],
-      footerNote: '🔒 Gizliliğiniz önceliğimizdir. Sorularınız için bize yazabilirsiniz.'
+      footerNote: 'Avenia olarak kullanıcılarımızın gizliliğini ciddiye alıyoruz.'
     }
   };
 
